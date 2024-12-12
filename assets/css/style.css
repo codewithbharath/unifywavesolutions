@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #5846f9;
+  color: rgba(50,185,232,255);
   text-decoration: none;
 }
 
@@ -84,7 +84,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #5846f9;
+  border: 6px solid rgba(50,185,232,255);
   border-top-color: #e7e4fe;
   border-radius: 50%;
   width: 60px;
@@ -128,7 +128,7 @@ h6 {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 14px 0;
+  padding: 10px 0;
   background: white;
 }
 
@@ -141,10 +141,10 @@ h6 {
 
 #header .logo {
   font-size: 22px;
-  margin: -0% 1% 1%;
+  margin: 3px;
   /* padding: 0px 66px 6px 0px; */
   line-height: 1;
-  font-weight: 600;
+  /* font-weight: 600; */
   letter-spacing: 2px;
   text-transform: uppercase;
   color: rgba(243,139,88,255);
@@ -152,6 +152,7 @@ h6 {
 
 #header .logo a {
   color: rgba(243,139,88,255);
+
 }
 
 #header .logo img {
@@ -159,6 +160,27 @@ h6 {
   position: absolute;
   left: 36px;
   top: -10px;}
+
+  #header .mob-logo {
+    font-size: 17px;
+    margin: 3% 17% 1%;
+    /* padding: 0px 66px 6px 0px; */
+    line-height: 1;
+    /* font-weight: 600; */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(243,139,88,255);
+  }
+  
+  #header .mob-logo a {
+    color: rgba(243,139,88,255);
+  }
+  
+  #header .mob-logo img {
+    max-height: 79px;
+    position: absolute;
+    left: 5px;
+    top: -10px;}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -290,7 +312,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #5846f9;
+  color: rgba(50,185,232,255);
 }
 
 .navbar .dropdown:hover>ul {
@@ -326,17 +348,27 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
-  font-size: 28px;
+  color: rgba(243,139,88,255);
+  font-size: 32px;
   cursor: pointer;
   display: none;
   line-height: 0;
   transition: 0.5s;
 }
 
+/* .mobile-nav-toggle::before{
+  color:#ffffff
+} */
+
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
+  }
+  .mob-logo{
+    display: block !important;
+  }
+  .logo{
+    display: none;
   }
 
   .navbar ul {
@@ -351,7 +383,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(28, 47, 65, 0.9);
+  /* background: rgba(243,139,88,255); */
   transition: 0.3s;
   z-index: 999;
 }
@@ -365,7 +397,7 @@ h6 {
 .navbar-mobile ul {
   display: block;
   position: absolute;
-  top: 55px;
+  top: 75px;
   right: 15px;
   bottom: 15px;
   left: 15px;
@@ -389,13 +421,23 @@ h6 {
 .navbar-mobile a:hover:before,
 .navbar-mobile li:hover>a:before,
 .navbar-mobile .active:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: rgba(50, 185, 232, 255);
   visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #5846f9;
+  color: rgba(50,185,232,255);
 }
 
 .navbar-mobile .getstarted,
@@ -430,7 +472,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #5846f9;
+  color: rgba(50,185,232,255);
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -482,7 +524,7 @@ h6 {
 
 #hero .btn-get-started:hover {
   background: #fff;
-  color: #5846f9;
+  color: rgba(50,185,232,255);
 }
 
 #hero .animated {
@@ -1086,11 +1128,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #5846f9;
+  border: 1px solid rgba(50,185,232,255);
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #5846f9;
+  background-color: rgba(50,185,232,255);
 }
 
 .portfolio-details .portfolio-info {
@@ -1155,7 +1197,7 @@ section {
 
 .pricing h4 {
   font-size: 36px;
-  color: #5846f9;
+  color: rgba(50,185,232,255);
   font-weight: 600;
   font-family: "Roboto", sans-serif;
   margin-bottom: 20px;
@@ -1187,7 +1229,7 @@ section {
 }
 
 .pricing ul i {
-  color: #5846f9;
+  color: rgba(50,185,232,255);
   font-size: 18px;
   padding-right: 4px;
 }
@@ -1205,7 +1247,7 @@ section {
 }
 
 .pricing .btn-buy {
-  background: linear-gradient(42deg, #5846f9 0%, #7b27d8 100%);
+  background: linear-gradient(42deg, rgba(50,185,232,255) 0%, #7b27d8 100%);
   display: inline-block;
   padding: 10px 35px;
   border-radius: 4px;
@@ -1219,12 +1261,12 @@ section {
 }
 
 .pricing .btn-buy:hover {
-  background: linear-gradient(180deg, #5846f9 0%, #7b27d8 100%);
+  background: linear-gradient(180deg, rgba(50,185,232,255) 0%, #7b27d8 100%);
 }
 
 .pricing .featured h3 {
   color: #fff;
-  background: #5846f9;
+  background: rgba(50,185,232,255);
 }
 
 .pricing .advanced {
@@ -1236,7 +1278,7 @@ section {
   z-index: 1;
   font-size: 14px;
   padding: 1px 0 3px 0;
-  background: #5846f9;
+  background: rgba(50,185,232,255);
   color: #fff;
 }
 
@@ -1244,7 +1286,7 @@ section {
 # Frequently Asked Questions
 --------------------------------------------------------------*/
 .faq {
-  background: linear-gradient(42deg, #5846f9 0%, #7b27d8 100%);
+  background: linear-gradient(42deg, rgba(50,185,232,255) 0%, #7b27d8 100%);
 }
 
 .faq .section-title h2,
@@ -1318,7 +1360,7 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #5846f9;
+  color: rgba(50,185,232,255);
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -1424,7 +1466,7 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #5846f9;
+  border-color: rgba(50,185,232,255);
 }
 
 .contact .php-email-form input {

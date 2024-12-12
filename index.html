@@ -14,7 +14,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -35,19 +37,35 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
       <h1 class="logo">
-        <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid">UnifyWave</a></h1>
+        <a href="index.html" ><img src="assets/img/logo.png" alt="" class="img-fluid">UnifyWave</a>
+      </h1>
+      <h1 class="mob-logo" style="display: none;">
+        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid">UnifyWave</a>
+
+      </h1>
+
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
+          <li class="dropdown"><a href="#services"><span>Services</span> <i class="bi bi-chevron-right"></i></a>
+            <ul>
+              <li> <a href="services/web-development.html">Web Development</a></li>
+              <li> <a href="services/outsource.html">Extend Your Team</a></li>
+              <li> <a href="services/mobile-dev.html">Mobile Development</a></li>
+              <li> <a href="services/iot-.html">IoT</a>
+              </li>
+              <li> <a href="services/devOps.html">DevOps</a></li>
+            </ul>
+          </li>
           <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
           <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a> -->
-            <!-- <ul>
+          <!-- <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
@@ -63,8 +81,8 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> -->
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-           <li><a class="getstarted scrollto" href="tel:+971-0524070446">Become a Client</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
+          <li><a class="getstarted scrollto" href="tel:+971-0524070446">Become a Client</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -79,8 +97,9 @@
       <div class="row justify-content-center">
         <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h1>Unifying technology for a better tomorrow.</h1>
-          <h2>A team of highly skilled and experienced professionals, providing actionable intelligence to support your business goals.</h2>
-          <div><a href="#about" class="btn-get-started scrollto">Get Started</a></div>
+          <h2>A team of highly skilled and experienced professionals, providing actionable intelligence to support your
+            business goals.</h2>
+          <div><a href="tel:+971-0524070446" class="btn-get-started scrollto">Become a Client</a></div>
         </div>
         <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
           <img src="assets/img/hero.png" class="img-fluid animated" alt="">
@@ -103,16 +122,20 @@
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
             <h3>Web development team delivering cutting-edge solutions.</h3>
             <p class="fst-italic">
-              We understand that every business has unique needs and goals, which is why we work closely with our clients to understand their specific requirements.
+              We understand that every business has unique needs and goals, which is why we work closely with our
+              clients to understand their specific requirements.
             </p>
             <ul>
-              <li><i class="bi bi-check-circle"></i> We can help you to building a digital solutions, building your brand.</li>
-              <li><i class="bi bi-check-circle"></i> Pride ourselves in delivering high-quality work on time and within budget.</li>
+              <li><i class="bi bi-check-circle"></i> We can help you to building a digital solutions, building your
+                brand.</li>
+              <li><i class="bi bi-check-circle"></i> Pride ourselves in delivering high-quality work on time and within
+                budget.</li>
               <li><i class="bi bi-check-circle"></i> Committed to delivering the best customer service.</li>
               <li><i class="bi bi-check-circle"></i> Strong emphasis on security and data privacy.</li>
-              <li><i class="bi bi-check-circle"></i> Help businesses to connect to their customers and optimize operations with IoT.</li>
+              <li><i class="bi bi-check-circle"></i> Help businesses to connect to their customers and optimize
+                operations with IoT.</li>
             </ul>
-<!--            <a href="#" class="read-more">Read More <i class="bi bi-long-arrow-right"></i></a>-->
+            <!--            <a href="#" class="read-more">Read More <i class="bi bi-long-arrow-right"></i></a>-->
           </div>
         </div>
 
@@ -126,22 +149,26 @@
         <div class="row counters">
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="1"
+              class="purecounter"></span>
             <p>Clients</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="13" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="13" data-purecounter-duration="1"
+              class="purecounter"></span>
             <p>Projects</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1"
+              class="purecounter"></span>
             <p>Team Size</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
+              class="purecounter"></span>
             <p>Support Projects</p>
           </div>
 
@@ -156,44 +183,62 @@
 
         <div class="section-title">
           <h2>Services</h2>
-          <p>Welcome to our development services page! We are a team of experienced developers who specialize in creating custom software solutions for businesses of all sizes. We use the latest technologies and follow industry best practices to ensure that the solutions we deliver are reliable, scalable, and meet your business needs. Contact us today to schedule a consultation and find out how we can help your business grow.</p>
+          <p>Welcome to our development services page! We are a team of experienced developers who specialize in
+            creating custom software solutions for businesses of all sizes. We use the latest technologies and follow
+            industry best practices to ensure that the solutions we deliver are reliable, scalable, and meet your
+            business needs. Contact us today to schedule a consultation and find out how we can help your business grow.
+          </p>
         </div>
 
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
-              <a  href="services/web-development.html"><div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                </svg>
-                <i class="bi bi-window"></i>
-              </div></a>
+              <a href="services/web-development.html">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                      d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
+                    </path>
+                  </svg>
+                  <i class="bi bi-window"></i>
+                </div>
+              </a>
               <h4><a href="services/web-development.html">Web development</a></h4>
-              <p>We can design and develop professional and responsive websites that will help you establish a strong online presence.</p>
+              <p>We can design and develop professional and responsive websites that will help you establish a strong
+                online presence.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box iconbox-orange ">
-              <a href="services/mobile-dev.html"> <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                </svg>
-                <i class="bi bi-phone"></i>
-              </div></a>
+              <a href="services/mobile-dev.html">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                      d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
+                    </path>
+                  </svg>
+                  <i class="bi bi-phone"></i>
+                </div>
+              </a>
               <h4><a href="services/mobile-dev.html">Mobile app development:</a></h4>
-              <p>We can create mobile apps for iOS and Android platforms that will help you reach a wider audience and improve engagement with your customers.</p>
+              <p>We can create mobile apps for iOS and Android platforms that will help you reach a wider audience and
+                improve engagement with your customers.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box iconbox-pink">
-              <a href="services/outsource.html"> <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                </svg>
-                <i class="bi bi-people-fill"></i>
-              </div></a>
+              <a href="services/outsource.html">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                      d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781">
+                    </path>
+                  </svg>
+                  <i class="bi bi-people-fill"></i>
+                </div>
+              </a>
               <h4><a href="services/outsource.html">Extend Your Team</a></h4>
               <p>Hire Full-Time, Outsourced Teams Easy, And Quick</p>
             </div>
@@ -201,40 +246,55 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-yellow">
-              <a href="services/iot.html"><div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
-                </svg>
-                <i class="bi bi-wifi"></i>
-              </div></a>
+              <a href="services/iot.html">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                      d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813">
+                    </path>
+                  </svg>
+                  <i class="bi bi-wifi"></i>
+                </div>
+              </a>
               <h4><a href="services/iot.html">IoT device deployment and management</a></h4>
-              <p>We can help you deploy and manage a fleet of IoT devices, ensuring they are securely connected and configured to meet your specific requirements.</p>
+              <p>We can help you deploy and manage a fleet of IoT devices, ensuring they are securely connected and
+                configured to meet your specific requirements.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box iconbox-red">
-              <a href="services/iot.html"> <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
-                </svg>
-                <i class="bi bi-wifi"></i>
-              </div></a>
+              <a href="services/iot.html">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                      d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572">
+                    </path>
+                  </svg>
+                  <i class="bi bi-wifi"></i>
+                </div>
+              </a>
               <h4><a href="services/iot.html">IoT integration</a></h4>
-              <p>We can integrate your IoT devices with your existing systems, such as your website, mobile apps, and cloud-based services.</p>
+              <p>We can integrate your IoT devices with your existing systems, such as your website, mobile apps, and
+                cloud-based services.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box iconbox-teal">
-              <a href="services/devOps.html"><div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
-                </svg>
-                <i class="bi bi-gear"></i>
-              </div></a>
+              <a href="services/devOps.html">
+                <div class="icon">
+                  <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                      d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762">
+                    </path>
+                  </svg>
+                  <i class="bi bi-gear"></i>
+                </div>
+              </a>
               <h4><a href="services/devOps.html">DevOps</a></h4>
-              <p>We can help you containerize your applications and services and orchestrate them using tools like Docker and Kubernetes, allowing you to improve the portability and scalability of your software.</p>
+              <p>We can help you containerize your applications and services and orchestrate them using tools like
+                Docker and Kubernetes, allowing you to improve the portability and scalability of your software.</p>
             </div>
           </div>
 
@@ -249,7 +309,11 @@
 
         <div class="section-title">
           <h2>Features</h2>
-          <p>Our company is a leading provider of development & support. We specialize in Web development & IoT services. With 10+ years of experience in the industry, our team of experts has the knowledge and skills to deliver results for our clients. Our unique approach to Agile development sets us apart from our competitors. We have a proven track record of success, as evidenced by our numerous awards and certifications. Trust us to help you achieve your business goals.</p>
+          <p>Our company is a leading provider of development & support. We specialize in Web development & IoT
+            services. With 10+ years of experience in the industry, our team of experts has the knowledge and skills to
+            deliver results for our clients. Our unique approach to Agile development sets us apart from our
+            competitors. We have a proven track record of success, as evidenced by our numerous awards and
+            certifications. Trust us to help you achieve your business goals.</p>
         </div>
 
         <div class="row">
@@ -257,23 +321,36 @@
             <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
               <i class="bx bx-receipt"></i>
               <h4>Innovation</h4>
-              <p>Innovation is at the heart of everything we do, and we're constantly looking for new ways to help our clients succeed. Whether you're looking to improve your website, develop a new app, or explore new business opportunities, we're here to help you take the next step.</p>
+              <p>Innovation is at the heart of everything we do, and we're constantly looking for new ways to help our
+                clients succeed. Whether you're looking to improve your website, develop a new app, or explore new
+                business opportunities, we're here to help you take the next step.</p>
             </div>
             <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
               <i class="bx bx-cube-alt"></i>
               <h4>Awards and certifications</h4>
-              <p>We are proud to have received numerous awards and certifications for our work in the industry. These accolades are a testament to the hard work and dedication of our team, and our commitment to delivering high-quality solutions to our clients.</p>
-              <p>Our team is certified in Microsoft, demonstrating our expertise and commitment to staying up-to-date with the latest industry trends and best practices.</p>
+              <p>We are proud to have received numerous awards and certifications for our work in the industry. These
+                accolades are a testament to the hard work and dedication of our team, and our commitment to delivering
+                high-quality solutions to our clients.</p>
+              <p>Our team is certified in Microsoft, demonstrating our expertise and commitment to staying up-to-date
+                with the latest industry trends and best practices.</p>
             </div>
             <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
               <i class="bx bx-images"></i>
               <h4>Unique services and offerings</h4>
-              <p>IoT integration and development, which utilizes Internet of Things technology to connect and automate various devices and systems. Unique approach to web development, such as using cutting-edge technologies or following an Agile development methodology.</p>
+              <p>IoT integration and development, which utilizes Internet of Things technology to connect and automate
+                various devices and systems. Unique approach to web development, such as using cutting-edge technologies
+                or following an Agile development methodology.</p>
             </div>
             <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="400">
               <i class="bx bx-shield"></i>
               <h4>Strong Team Members</h4>
-              <p>Our team is made up of experienced professionals with a wide range of skills and expertise. We have developers, designers, project managers, and support staff who work together to deliver high-quality solutions to our clients. Our team is dedicated, collaborative and always eager to take on new challenges. With our diverse set of skills, we are able to deliver a wide range of IT services such as web development, mobile app development, IoT solutions, DevOps support and more. We are committed to delivering the best possible results for our clients, and we pride ourselves on our flexibility, adaptability and rapid response times.</p>
+              <p>Our team is made up of experienced professionals with a wide range of skills and expertise. We have
+                developers, designers, project managers, and support staff who work together to deliver high-quality
+                solutions to our clients. Our team is dedicated, collaborative and always eager to take on new
+                challenges. With our diverse set of skills, we are able to deliver a wide range of IT services such as
+                web development, mobile app development, IoT solutions, DevOps support and more. We are committed to
+                delivering the best possible results for our clients, and we pride ourselves on our flexibility,
+                adaptability and rapid response times.</p>
             </div>
           </div>
           <div class="image col-lg-6 order-1 order-lg-2 " data-aos="zoom-in" data-aos-delay="100">
@@ -290,7 +367,7 @@
 
         <div class="section-title">
           <h2>Testimonials</h2>
-<!--          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>-->
+          <!--          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>-->
         </div>
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -300,7 +377,10 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Our company has been working with UnifyWave for several months now and we couldn't be happier with the results. They have helped us develop a custom solution that met all of our needs and exceeded our expectations. Their team is professional, responsive and highly skilled. We highly recommend them for anyone looking for a reliable and talented IT service provider.
+                  Our company has been working with UnifyWave for several months now and we couldn't be happier with the
+                  results. They have helped us develop a custom solution that met all of our needs and exceeded our
+                  expectations. Their team is professional, responsive and highly skilled. We highly recommend them for
+                  anyone looking for a reliable and talented IT service provider.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
                 <img src="assets/img/testimonials/nopic.png" class="testimonial-img" alt="">
@@ -313,7 +393,10 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Working with UnifyWave was an absolute pleasure. Their team was professional, responsive, and delivered a fantastic final product. We couldn't be happier with the new website they built for us and have already seen an increase in online sales. We highly recommend them to anyone looking for a reliable and talented web development team.                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  Working with UnifyWave was an absolute pleasure. Their team was professional, responsive, and
+                  delivered a fantastic final product. We couldn't be happier with the new website they built for us and
+                  have already seen an increase in online sales. We highly recommend them to anyone looking for a
+                  reliable and talented web development team. <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
                 <img src="assets/img/testimonials/tnopic.png" class="testimonial-img" alt="">
                 <h3>Sara Wilsson</h3>
@@ -325,7 +408,10 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  We have been working with UnifyWave for over a year now on developing a mobile app for our business. They have been great to work with, always available to answer our questions and deliver new features on time. The app has been a huge success and we couldn't have done it without their expertise. We highly recommend them for any mobile app development project."
+                  We have been working with UnifyWave for over a year now on developing a mobile app for our business.
+                  They have been great to work with, always available to answer our questions and deliver new features
+                  on time. The app has been a huge success and we couldn't have done it without their expertise. We
+                  highly recommend them for any mobile app development project."
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
                 <img src="assets/img/testimonials/nopic.png" class="testimonial-img" alt="">
@@ -349,7 +435,9 @@
 
         <div class="section-title">
           <h2>Portfolio</h2>
-          <p>We take pride in our work and are proud to showcase some of our recent projects. Our portfolio highlights our capabilities and the diversity of industries we have worked with. Browse through our portfolio to see how we have helped our clients achieve their goals.</p>
+          <p>We take pride in our work and are proud to showcase some of our recent projects. Our portfolio highlights
+            our capabilities and the diversity of industries we have worked with. Browse through our portfolio to see
+            how we have helped our clients achieve their goals.</p>
         </div>
 
         <div class="row">
@@ -366,19 +454,19 @@
         <div class="row portfolio-container">
 
 
-<!--          <div class="col-lg-4 col-md-6 portfolio-item filter-app">-->
-<!--            <div class="portfolio-wrap">-->
-<!--              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">-->
-<!--              <div class="portfolio-info">-->
-<!--                <h4>XYZ Clothing</h4>-->
-<!--                <p>E-Commerce Website</p>-->
-<!--              </div>-->
-<!--              <div class="portfolio-links">-->
-<!--                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>-->
-<!--                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
+          <!--          <div class="col-lg-4 col-md-6 portfolio-item filter-app">-->
+          <!--            <div class="portfolio-wrap">-->
+          <!--              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">-->
+          <!--              <div class="portfolio-info">-->
+          <!--                <h4>XYZ Clothing</h4>-->
+          <!--                <p>E-Commerce Website</p>-->
+          <!--              </div>-->
+          <!--              <div class="portfolio-links">-->
+          <!--                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>-->
+          <!--                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
+          <!--              </div>-->
+          <!--            </div>-->
+          <!--          </div>-->
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-iot">
             <div class="portfolio-wrap">
@@ -388,39 +476,40 @@
                 <p>Wi-Fi-enabled power adapter</p>
               </div>
               <div class="portfolio-links">
-                <a href="assets/img/projects/smart-plug-e1651103632624.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Wi-Fi-enabled power adapter"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/projects/smart-plug-e1651103632624.png" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Wi-Fi-enabled power adapter"><i class="bx bx-plus"></i></a>
                 <a href="smart-plug-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
 
-<!--          <div class="col-lg-4 col-md-6 portfolio-item filter-app">-->
-<!--            <div class="portfolio-wrap">-->
-<!--              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">-->
-<!--              <div class="portfolio-info">-->
-<!--                <h4>ABC Inc.</h4>-->
-<!--                <p>Corporate Website</p>-->
-<!--              </div>-->
-<!--              <div class="portfolio-links">-->
-<!--                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>-->
-<!--                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
+          <!--          <div class="col-lg-4 col-md-6 portfolio-item filter-app">-->
+          <!--            <div class="portfolio-wrap">-->
+          <!--              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">-->
+          <!--              <div class="portfolio-info">-->
+          <!--                <h4>ABC Inc.</h4>-->
+          <!--                <p>Corporate Website</p>-->
+          <!--              </div>-->
+          <!--              <div class="portfolio-links">-->
+          <!--                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>-->
+          <!--                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
+          <!--              </div>-->
+          <!--            </div>-->
+          <!--          </div>-->
 
-<!--          <div class="col-lg-4 col-md-6 portfolio-item filter-card">-->
-<!--            <div class="portfolio-wrap">-->
-<!--              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">-->
-<!--              <div class="portfolio-info">-->
-<!--                <h4>Card 2</h4>-->
-<!--                <p>Card</p>-->
-<!--              </div>-->
-<!--              <div class="portfolio-links">-->
-<!--                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>-->
-<!--                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
+          <!--          <div class="col-lg-4 col-md-6 portfolio-item filter-card">-->
+          <!--            <div class="portfolio-wrap">-->
+          <!--              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">-->
+          <!--              <div class="portfolio-info">-->
+          <!--                <h4>Card 2</h4>-->
+          <!--                <p>Card</p>-->
+          <!--              </div>-->
+          <!--              <div class="portfolio-links">-->
+          <!--                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>-->
+          <!--                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
+          <!--              </div>-->
+          <!--            </div>-->
+          <!--          </div>-->
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-iot">
             <div class="portfolio-wrap">
@@ -430,7 +519,9 @@
                 <p>Save Water - IoT</p>
               </div>
               <div class="portfolio-links">
-                <a href="assets/img/projects/jhOHhdHNDG1tfQX0g_dP-zKEVq-JoFkgMOurpBHR94w.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Smart Water Governance"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/projects/jhOHhdHNDG1tfQX0g_dP-zKEVq-JoFkgMOurpBHR94w.png"
+                  data-gallery="portfolioGallery" class="portfolio-lightbox" title="Smart Water Governance"><i
+                    class="bx bx-plus"></i></a>
                 <a href="smart-water-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
@@ -444,83 +535,84 @@
                 <p>E-comerce for Herbal products</p>
               </div>
               <div class="portfolio-links">
-                <a href="assets/img/projects/e-com-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="E-Commerce- Products"><i class="bx bx-plus"></i></a>
+                <a href="assets/img/projects/e-com-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="E-Commerce- Products"><i class="bx bx-plus"></i></a>
                 <a href="https://hafsaherbals.com" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
-          
 
 
-<!--          <div class="col-lg-4 col-md-6 portfolio-item filter-app">-->
-<!--            <div class="portfolio-wrap">-->
-<!--              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">-->
-<!--              <div class="portfolio-info">-->
-<!--                <h4>XYZ Restaurant</h4>-->
-<!--                <p>Food delivery App</p>-->
-<!--              </div>-->
-<!--              <div class="portfolio-links">-->
-<!--                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>-->
-<!--                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
+
+          <!--          <div class="col-lg-4 col-md-6 portfolio-item filter-app">-->
+          <!--            <div class="portfolio-wrap">-->
+          <!--              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">-->
+          <!--              <div class="portfolio-info">-->
+          <!--                <h4>XYZ Restaurant</h4>-->
+          <!--                <p>Food delivery App</p>-->
+          <!--              </div>-->
+          <!--              <div class="portfolio-links">-->
+          <!--                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>-->
+          <!--                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
+          <!--              </div>-->
+          <!--            </div>-->
+          <!--          </div>-->
 
 
-<!--          <div class="col-lg-4 col-md-6 portfolio-item filter-app">-->
-<!--            <div class="portfolio-wrap">-->
-<!--              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">-->
-<!--              <div class="portfolio-info">-->
-<!--                <h4>ABC Fitness</h4>-->
-<!--                <p>Fitness tracking App</p>-->
-<!--              </div>-->
-<!--              <div class="portfolio-links">-->
-<!--                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>-->
-<!--                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="col-lg-4 col-md-6 portfolio-item filter-card">-->
-<!--            <div class="portfolio-wrap">-->
-<!--              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">-->
-<!--              <div class="portfolio-info">-->
-<!--                <h4>Card 1</h4>-->
-<!--                <p>Card</p>-->
-<!--              </div>-->
-<!--              <div class="portfolio-links">-->
-<!--                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>-->
-<!--                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
+          <!--          <div class="col-lg-4 col-md-6 portfolio-item filter-app">-->
+          <!--            <div class="portfolio-wrap">-->
+          <!--              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">-->
+          <!--              <div class="portfolio-info">-->
+          <!--                <h4>ABC Fitness</h4>-->
+          <!--                <p>Fitness tracking App</p>-->
+          <!--              </div>-->
+          <!--              <div class="portfolio-links">-->
+          <!--                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>-->
+          <!--                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
+          <!--              </div>-->
+          <!--            </div>-->
+          <!--          </div>-->
+          <!--          <div class="col-lg-4 col-md-6 portfolio-item filter-card">-->
+          <!--            <div class="portfolio-wrap">-->
+          <!--              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">-->
+          <!--              <div class="portfolio-info">-->
+          <!--                <h4>Card 1</h4>-->
+          <!--                <p>Card</p>-->
+          <!--              </div>-->
+          <!--              <div class="portfolio-links">-->
+          <!--                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>-->
+          <!--                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
+          <!--              </div>-->
+          <!--            </div>-->
+          <!--          </div>-->
 
-<!--          <div class="col-lg-4 col-md-6 portfolio-item filter-card">-->
-<!--            <div class="portfolio-wrap">-->
-<!--              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">-->
-<!--              <div class="portfolio-info">-->
-<!--                <h4>Card 3</h4>-->
-<!--                <p>Card</p>-->
-<!--              </div>-->
-<!--              <div class="portfolio-links">-->
-<!--                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>-->
-<!--                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
+          <!--          <div class="col-lg-4 col-md-6 portfolio-item filter-card">-->
+          <!--            <div class="portfolio-wrap">-->
+          <!--              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">-->
+          <!--              <div class="portfolio-info">-->
+          <!--                <h4>Card 3</h4>-->
+          <!--                <p>Card</p>-->
+          <!--              </div>-->
+          <!--              <div class="portfolio-links">-->
+          <!--                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>-->
+          <!--                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
+          <!--              </div>-->
+          <!--            </div>-->
+          <!--          </div>-->
 
-<!--          <div class="col-lg-4 col-md-6 portfolio-item filter-iot">-->
-<!--            <div class="portfolio-wrap">-->
-<!--              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">-->
-<!--              <div class="portfolio-info">-->
-<!--                <h4>Web 3</h4>-->
-<!--                <p>Web</p>-->
-<!--              </div>-->
-<!--              <div class="portfolio-links">-->
-<!--                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>-->
-<!--                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
+          <!--          <div class="col-lg-4 col-md-6 portfolio-item filter-iot">-->
+          <!--            <div class="portfolio-wrap">-->
+          <!--              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">-->
+          <!--              <div class="portfolio-info">-->
+          <!--                <h4>Web 3</h4>-->
+          <!--                <p>Web</p>-->
+          <!--              </div>-->
+          <!--              <div class="portfolio-links">-->
+          <!--                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>-->
+          <!--                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>-->
+          <!--              </div>-->
+          <!--            </div>-->
+          <!--          </div>-->
 
         </div>
 
@@ -678,13 +770,13 @@
     <section id="contact" class="contact section-bg">
       <div class="container" data-aos="fade-up">
 
-<!--        <div class="section-title">-->
-<!--          <h2>Contact</h2>-->
-<!--          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>-->
-<!--        </div>-->
+        <!--        <div class="section-title">-->
+        <!--          <h2>Contact</h2>-->
+        <!--          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>-->
+        <!--        </div>-->
 
         <div class="row">
-         
+
 
           <div class="col-lg-3 col-md-6">
             <div class="info-box  mb-4">
@@ -708,11 +800,12 @@
             </div>
           </div>
 
-           <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6">
             <div class="info-box  mb-4">
               <i class="bx bx-cloud"></i>
               <h3>100% Remote Company</h3>
-              <p>Highlight that despite not having a physical office, your team is highly accessible and responsive via the provided digital communication channels.</p>
+              <p>Highlight that despite not having a physical office, your team is highly accessible and responsive via
+                the provided digital communication channels.</p>
             </div>
           </div>
 
@@ -724,21 +817,23 @@
           </div>
 
           <div class="col-lg-6">
-            <form  action="https://api.web3forms.com/submit" method="post" role="form" class="php-email-form">
+            <form action="https://api.web3forms.com/submit" method="post" role="form" class="php-email-form">
 
-                  <input type="hidden" name="access_key" value="10fc485e-723c-4e1a-8913-1ca225c218b4">
+              <input type="hidden" name="access_key" value="10fc485e-723c-4e1a-8913-1ca225c218b4">
 
               <div class="row">
                 <div class="form-group mt-3">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
-                
+
               </div>
               <div class="form-group mt-3">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Please enter your Email" required>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Please enter your Email"
+                  required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Please provide details about your inquiry.." required></textarea>
+                <textarea class="form-control" name="message" rows="5"
+                  placeholder="Please provide details about your inquiry.." required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
@@ -767,7 +862,7 @@
             <h3>UNIFYWAVE</h3>
             <p>
               We are a 100% cloud-based company<br>
-               with a remote team working across different time zones<br>
+              with a remote team working across different time zones<br>
               <strong>Phone:</strong> +971 0502 051954<br>
               <strong>Email:</strong> bharath@unifywavesolutions.com<br>
             </p>
@@ -791,7 +886,8 @@
               <li><i class="bx bx-chevron-right"></i> <a href="services/web-development.html">Web Development</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="services/outsource.html">Extend Your Team</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="services/mobile-dev.html">Mobile Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="services/iot-.html">IoT data management and analytics</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services/iot-.html">IoT data management and analytics</a>
+              </li>
               <li><i class="bx bx-chevron-right"></i> <a href="services/devOps.html">DevOps</a></li>
 
             </ul>
@@ -799,7 +895,8 @@
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Join Our Newsletter</h4>
-            <p>We promise to only send you relevant information and to never spam your inbox. Sign up now and join our community of tech-savvy professionals. You can unsubscribe at any time if you change your mind.</p>
+            <p>We promise to only send you relevant information and to never spam your inbox. Sign up now and join our
+              community of tech-savvy professionals. You can unsubscribe at any time if you change your mind.</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
@@ -830,7 +927,8 @@
 
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
