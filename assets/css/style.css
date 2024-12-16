@@ -219,7 +219,7 @@ h6 {
   padding: 0 3px;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
-  font-weight: 600;
+  /* font-weight: 600; */
   color:rgba(243,139,88,255);
   white-space: nowrap;
   transition: 0.3s;
@@ -268,7 +268,7 @@ h6 {
   color: rgba(243,139,88,255);
   transition: 0.3s;
   font-size: 14px;
-  font-weight: 600;
+  /* font-weight: 600; */
   border: 2px solid rgba(243,139,88,255);
 }
 
@@ -305,7 +305,7 @@ h6 {
 .navbar .dropdown ul a {
   padding: 10px 20px;
   font-size: 14px;
-  color: rgba(50,185,232,255);
+  color: rgba(243,139,88,255);
 }
 
 .navbar .dropdown ul a i {
@@ -475,7 +475,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: rgba(50,185,232,255);
+  color: rgba(243,139,88,255);
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -500,7 +500,7 @@ h6 {
 #hero h1 {
   margin: 0;
   font-size: 52px;
-  font-weight: 700;
+  /* font-weight: 700; */
   line-height: 64px;
   color: #fff;
 }
@@ -624,6 +624,40 @@ section {
 .section-bg {
   background: #ffffff;}
 
+
+  
+.section-title-unify {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+.section-title-unify h2 {
+  color:rgba(50,185,232,255);
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title-unify h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: rgba(243,139,88,255);
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.section-title-unify p {
+  margin-bottom: 0;
+}
+
 .section-title {
   text-align: center;
   padding-top: 30px;
@@ -660,7 +694,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  padding: 120px 0;
+  padding-top: 120px;
 }
 
 .about .content h3 {
@@ -741,9 +775,10 @@ section {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  padding: 70px 20px 80px 20px;
+  /* padding: 70px 20px 80px 20px; */
   transition: all ease-in-out 0.3s;
   background: #fff;
+  padding: 20px;
 }
 
 .services .icon-box .icon {
@@ -1750,10 +1785,11 @@ section {
 }
 
 .unify-container p {
-    font-size: 16px;
+  font-size: 16px;
     color: #555555;
     line-height: 1.6;
     text-align: justify;
+
 }
 
 .section {
@@ -1810,4 +1846,223 @@ section {
   max-width: 60%;
   height: auto;
   border-radius: 8px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  width: 70px; /* Increased size for larger logo */
+  height: auto;
+  /* margin-right: 10px; */
+  /* margin-right: 10px; */
+}
+
+.company-name {
+  letter-spacing: 2px;
+  font-size: 20px;
+  text-transform: uppercase;
+
+  text-align: center;
+  background: linear-gradient(to right, rgba(243, 139, 88, 1), rgba(50, 185, 232, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* margin-bottom: 20px; */
+}
+
+.unify-container-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures space allocation between logo and menu */
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-bottom: 2px solid #f38b58;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cta {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.cta a {
+  text-decoration: none;
+  font-size: 16px;
+  background: #32b9e8;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.cta a:hover {
+  background: #f38b58;
+}
+
+@media screen and (max-width: 600px) {
+  .company-name {
+      font-size: 16px; /* Smaller text for mobile view */
+  }
+  .logo-container img {
+      width: 50px; /* Smaller logo for mobile view */
+  }
+  .header {
+      height: auto; /* Allow header to adapt in smaller screens */
+  }
+}
+.unify-services {
+  padding: 76px 10%;
+  background: #fff;
+  text-align: center;
+}
+
+.unify-services h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.service-card {
+  background: #f4f4f4;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.service-card:hover {
+  background: rgba(243, 139, 88, 0.1); /* Light Orange */
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 1rem;
+}
+
+/* About Section */
+.unify-about {
+  background: rgba(50, 185, 232, 1); /* Blue */
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+.unify-about  h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact .btn {
+  background: rgba(50, 185, 232, 1); /* Blue */
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.contact .btn:hover {
+  background: rgba(243, 139, 88, 1); /* Orange */
+}
+.page ul {
+  margin: 20px 0;
+  padding-left: 20px;
+  list-style-type: none; /* Removes default bullet points */
+  text-align: left;
+}
+
+.page ul li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  position: relative;
+}
+
+
+.page ul li a{
+  
+    color: rgba(243, 139, 88, 1);
+    text-decoration: underline;
+    
+}
+
+.page ul li::before {
+  content: '\2022'; /* Unicode for bullet point */
+  font-size: 24px;
+  color: rgba(50, 185, 232, 1); /* Blue color */
+  position: absolute;
+  left: -20px; /* Adjust the position of the bullet */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Styling for the entire section */
+.content-section {
+  padding: 70px 70px 0px 40px;
+  background-color: #ffffff; /* Light background for contrast */
+  margin: 20px 0;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+/* Title styling */
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgba(50, 185, 232, 1); /* Blue color */
+  margin-bottom: 10px;
+}
+
+/* Description styling */
+.section-description {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* List styling */
+.section-list {
+  padding-left: 20px;
+  list-style-type: disc; /* Default bullets */
+  margin: 0;
+}
+
+.section-list li {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  
+}
+
+.section-list ul li::before {
+  content: '\2022' ; /* Unicode for bullet point */
+  font-size: 24px;
+  color: rgba(50, 185, 232, 1); /* Blue color */
+  position: absolute;
+  left: -20px; /* Adjust the position of the bullet */
+  top: 50%;
+  transform: translateY(-50%);
 }
