@@ -1861,15 +1861,21 @@ section {
 }
 
 .company-name {
-  letter-spacing: 2px;
-  font-size: 20px;
-  text-transform: uppercase;
+  letter-spacing: 2px; /* Adds space between letters */
+  font-size: 20px; /* Sets font size */
+  text-transform: uppercase; /* Converts text to uppercase */
+  text-align: center; /* Aligns text to the center */
 
-  text-align: center;
+  /* Applies a gradient to the text */
   background: linear-gradient(to right, rgba(243, 139, 88, 1), rgba(50, 185, 232, 1));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; /* Ensures gradient is clipped to text */
+  -webkit-text-fill-color: transparent; /* Makes text transparent to show the gradient */
+
+  /* Uncomment or remove margin-bottom if not needed */
   /* margin-bottom: 20px; */
+
+  /* Add fallback for browsers that do not support -webkit-background-clip */
+  color: rgba(243, 139, 88, 1); /* Fallback text color */
 }
 
 .unify-container-header{
