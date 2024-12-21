@@ -219,7 +219,7 @@ h6 {
   padding: 0 3px;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
-  /* font-weight: 600; */
+  font-weight: 600;
   color:rgba(243,139,88,255);
   white-space: nowrap;
   transition: 0.3s;
@@ -1870,7 +1870,7 @@ section {
   background: linear-gradient(to right, rgba(243, 139, 88, 1), rgba(50, 185, 232, 1));
   -webkit-background-clip: text; /* Ensures gradient is clipped to text */
   -webkit-text-fill-color: transparent; /* Makes text transparent to show the gradient */
-
+font-weight: 600;
   /* Uncomment or remove margin-bottom if not needed */
   /* margin-bottom: 20px; */
 
