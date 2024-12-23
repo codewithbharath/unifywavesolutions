@@ -1854,15 +1854,15 @@ section {
 }
 
 .logo-container img {
-  width: 70px; /* Increased size for larger logo */
+  width: 100px; /* Increased size for larger logo */
   height: auto;
   /* margin-right: 10px; */
-  /* margin-right: 10px; */
+  margin-right: -10px;
 }
 
 .company-name {
   letter-spacing: 2px; /* Adds space between letters */
-  font-size: 20px; /* Sets font size */
+  font-size: 23px; /* Sets font size */
   text-transform: uppercase; /* Converts text to uppercase */
   text-align: center; /* Aligns text to the center */
 
@@ -1883,7 +1883,7 @@ font-weight: 600;
   align-items: center;
   justify-content: space-between; /* Ensures space allocation between logo and menu */
   background-color: #ffffff;
-  padding: 10px 20px;
+  padding: 0px 15px;
   border-bottom: 2px solid #f38b58;
   position: fixed;
   top: 0;
@@ -1913,10 +1913,10 @@ font-weight: 600;
 
 @media screen and (max-width: 600px) {
   .company-name {
-      font-size: 16px; /* Smaller text for mobile view */
+      font-size: 20px; /* Smaller text for mobile view */
   }
   .logo-container img {
-      width: 50px; /* Smaller logo for mobile view */
+      width: 70px; /* Smaller logo for mobile view */
   }
   .header {
       height: auto; /* Allow header to adapt in smaller screens */
