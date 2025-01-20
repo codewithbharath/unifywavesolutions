@@ -14,7 +14,10 @@ body {
     font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #ffffff;}
+    background-image: url('../img/wave3.png'); /* Your wave image */
+    background-repeat: repeat-y; /* Repeat horizontally */
+  
+  }
 
 a {
   color: rgba(50,185,232,255);
@@ -45,7 +48,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: rgba(243,139,88,255);
+  background: #ff822c;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -139,7 +142,7 @@ h6 {
 #header.header-inner-pages {
   background: white;
   padding: 15px 0;
-  border-bottom: solid 5px rgba(243,139,88,255);
+  border-bottom: solid 5px #ff822c;
 }
 
 #header .logo {
@@ -150,11 +153,11 @@ h6 {
   /* font-weight: 600; */
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: rgba(243,139,88,255);
+  color: #ff822c;
 }
 
 #header .logo a {
-  color: rgba(243,139,88,255);
+  color: #ff822c;
 
 }
 
@@ -172,11 +175,11 @@ h6 {
     /* font-weight: 600; */
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: rgba(243,139,88,255);
+    color: #ff822c;
   }
   
   #header .mob-logo a {
-    color: rgba(243,139,88,255);
+    color: #ff822c;
   }
   
   #header .mob-logo img {
@@ -220,7 +223,7 @@ h6 {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 600;
-  color:rgba(243,139,88,255);
+  color:#ff822c;
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
@@ -257,7 +260,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color:rgba(243,139,88,255);
+  color:#ff822c;
 }
 
 .navbar .getstarted,
@@ -265,17 +268,17 @@ h6 {
   padding: 8px 25px;
   margin-left: 30px;
   border-radius: 5px;
-  color: rgba(243,139,88,255);
+  color: #ff822c;
   transition: 0.3s;
   font-size: 14px;
   /* font-weight: 600; */
-  border: 2px solid rgba(243,139,88,255);
+  border: 2px solid #ff822c;
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
-  color: rgba(243,139,88,255);
-  border-color: rgba(243,139,88,255);
+  color: #ff822c;
+  border-color: #ff822c;
 }
 
 .navbar .getstarted:before,
@@ -305,7 +308,7 @@ h6 {
 .navbar .dropdown ul a {
   padding: 10px 20px;
   font-size: 14px;
-  color: rgba(243,139,88,255);
+  color: #ff822c;
 }
 
 .navbar .dropdown ul a i {
@@ -351,7 +354,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: rgba(243,139,88,255);
+  color: #ff822c;
   font-size: 32px;
   cursor: pointer;
   display: none;
@@ -386,7 +389,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  /* background: rgba(243,139,88,255); */
+  /* background: #ff822c; */
   transition: 0.3s;
   z-index: 999;
 }
@@ -418,7 +421,7 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: rgba(243,139,88,255);
+  color: #ff822c;
 }
 
 .navbar-mobile a:hover:before,
@@ -475,7 +478,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: rgba(243,139,88,255);
+  color: #ff822c;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -488,8 +491,12 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: rgba(243,139,88,255);
+  background-image: url("../img/banner.jpg");
   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+
 }
 
 #hero .container,
@@ -649,7 +656,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: rgba(243,139,88,255);
+  background: #ff822c;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -681,7 +688,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: rgba(243,139,88,255);
+  background: #ff822c;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -715,7 +722,7 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: rgba(243,139,88,255);
+  color: #ff822c;
 }
 
 .about .content p:last-child {
@@ -732,7 +739,7 @@ section {
   border-radius: 5px;
   transition: 0.5s;
   color: #fff;
-  background: rgba(243,139,88,255);
+  background: #ff822c;
   position: relative;
 }
 
@@ -751,7 +758,7 @@ section {
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  background: rgba(243,139,88,255);
+  background: #ff822c;
   padding: 8px;
 }
 
@@ -915,7 +922,7 @@ section {
 .features .icon-box i {
   font-size: 48px;
   float: left;
-  color: rgba(243,139,88,255);
+  color: #ff822c;
 }
 
 .features .icon-box p {
@@ -1008,11 +1015,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid rgba(243,139,88,255);
+  border: 1px solid #ff822c;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: rgba(243,139,88,255);
+  background-color: #ff822c;
 }
 
 @media (max-width: 767px) {
@@ -1055,7 +1062,7 @@ section {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: rgba(243,139,88,255);
+  background: #ff822c;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1429,7 +1436,7 @@ section {
 
 .contact .info-box i {
   font-size: 32px;
-  color: rgba(243,139,88,255);
+  color: #ff822c;
   border-radius: 50%;
   padding: 8px;
 }
@@ -1526,7 +1533,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: rgba(243,139,88,255);
+  background: #ff822c;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1610,7 +1617,7 @@ section {
 #footer {
   color: #fff;
   font-size: 14px;
-  background: rgba(243,139,88,255);
+  background: #ff822c;
   background-size: cover;
 }
 
@@ -1729,7 +1736,7 @@ section {
 }
 
 #footer .footer-newsletter form input[type=submit]:hover {
-  background: rgba(243,139,88,255);
+  background: #ff822c;
 }
 
 #footer .copyright-wrap {
@@ -1823,10 +1830,12 @@ section {
     margin: 30px 0 10px;
 }
 
+
+
 .contact-btn a {
     text-decoration: none;
     font-size: 16px;
-    background: rgba(50, 185, 232, 1);
+    background: #ff822c;
     color: #ffffff;
     padding: 12px 20px;
     border-radius: 4px;
@@ -1862,7 +1871,7 @@ section {
 
 .company-name {
   letter-spacing: 2px; /* Adds space between letters */
-  font-size: 23px; /* Sets font size */
+  font-size: 30px; /* Sets font size */
   text-transform: uppercase; /* Converts text to uppercase */
   text-align: center; /* Aligns text to the center */
 
@@ -1881,15 +1890,34 @@ font-weight: 600;
 .unify-container-header{
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Ensures space allocation between logo and menu */
+  justify-content: space-around; /* Ensures space allocation between logo and menu */
   background-color: #ffffff;
   padding: 0px 15px;
-  border-bottom: 2px solid #f38b58;
+  border-bottom: 1px solid rgba(50,185,232,255);
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* background: url('../img/wave.png') no-repeat center center / cover; */
+
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+
+  
+  
+}
+.wave-header {
+  /* height: 300px; */
+  background: url('../img/wave1.png') no-repeat center center / cover;
+  position: relative;
+  filter: blur(8px);
+  height: 100vh; /* Full viewport height */
+  /* display: flex;
+  filter: blur(8px);
+  z-index: 1; */
+  /* justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); */
 }
 
 .cta {
