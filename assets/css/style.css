@@ -11,7 +11,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
-    font-family: 'Poppins', Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     background-image: url('../img/wave3.png'); /* Your wave image */
@@ -35,7 +35,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family:  'Montserrat', sans-serif;;
 }
 
 /*--------------------------------------------------------------
@@ -220,7 +220,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 0 3px;
-  font-family: "Poppins", sans-serif;
+  font-family:  'Montserrat', sans-serif;;
   font-size: 15px;
   font-weight: 600;
   color:#ff822c;
@@ -519,7 +519,7 @@ h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "Poppins", sans-serif;
+  font-family:  'Montserrat', sans-serif;;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -730,7 +730,7 @@ section {
 }
 
 .about .content .read-more {
-  font-family: "Poppins", sans-serif;
+  font-family:  'Montserrat', sans-serif;;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -767,7 +767,7 @@ section {
   display: block;
   color: #fff;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family:  'Montserrat', sans-serif;;
 }
 
 .counts .counters p {
@@ -1056,7 +1056,7 @@ section {
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
   border-radius: 5px;
-  font-family: "Poppins", sans-serif;
+  font-family:  'Montserrat', sans-serif;;
 }
 
 .portfolio #portfolio-flters li:hover,
@@ -1643,7 +1643,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Poppins", sans-serif;
+  font-family:  'Montserrat', sans-serif;;
 }
 
 #footer .footer-top h4 {
@@ -1879,7 +1879,7 @@ section {
   background: linear-gradient(to right, rgba(243, 139, 88, 1), rgba(50, 185, 232, 1));
   -webkit-background-clip: text; /* Ensures gradient is clipped to text */
   -webkit-text-fill-color: transparent; /* Makes text transparent to show the gradient */
-font-weight: 600;
+/* font-weight: 600; */
   /* Uncomment or remove margin-bottom if not needed */
   /* margin-bottom: 20px; */
 
