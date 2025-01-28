@@ -701,7 +701,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  padding-top: 120px;
+  padding-top: 60px;
 }
 
 .about .content h3 {
@@ -1777,7 +1777,7 @@ section {
 
 .unify-container {
     /* max-width: 1000px; */
-    /* margin: 50px auto; */
+    margin: 10px auto;
     /* background: #ffffff;
     padding: 20px 30px; */
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
@@ -2060,7 +2060,7 @@ section {
 /* Styling for the entire section */
 .content-section {
   padding: 70px 70px 0px 40px;
-  background-color: #ffffff; /* Light background for contrast */
+/* Light background for contrast */
   margin: 20px 0;
   border-radius: 8px;
   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
