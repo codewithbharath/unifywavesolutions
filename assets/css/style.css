@@ -409,7 +409,7 @@ h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #121212;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -460,7 +460,7 @@ h6 {
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #fff;
+  background: #121212;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -744,9 +744,9 @@ section {
   position: relative;
 }
 
-.about .content .read-more:hover {
+/* .about .content .read-more:hover {
   background: #0d663c;
-}
+} */
 
 .about .content .read-more i {
   font-size: 22px;
@@ -1799,7 +1799,7 @@ section {
 
 .unify-container p {
   font-size: 16px;
-    color: #555555;
+    /* color: #555555; */
     line-height: 1.6;
     text-align: justify;
 
@@ -1825,7 +1825,7 @@ section {
 
 .unify-section p {
   font-size: 16px;
-  color: #555555;
+  /* color: #555555; */
   line-height: 1.6;
   text-align: justify;
 }
@@ -2120,7 +2120,6 @@ section {
   max-width: 800px;
   margin: 0 auto;
   color: #333; /* Dark text color */
-  font-family: 'Roboto', sans-serif; /* Clean, modern font */
 }
 
 .feature-title,.expertise-title,.achievements-title {
@@ -2157,3 +2156,17 @@ section {
 }
 
 
+/* .logo-container { */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+   /* Adjust spacing between images */
+   /* gap: 10px; */
+/* } */
+
+
+
+.logo-right {
+  height: 23px !important;
+    width: auto !important;
+}
