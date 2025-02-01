@@ -8,7 +8,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -48,7 +48,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #ff822c;
+  background: #121212;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -57,7 +57,7 @@ h6 {
 
 .back-to-top i {
   font-size: 28px;
-  color: #fff;
+  color:  #ff822c;
   line-height: 0;
 }
 
@@ -222,7 +222,7 @@ h6 {
   padding: 0 3px;
   font-family:  'Montserrat', sans-serif;;
   font-size: 15px;
-  font-weight: 600;
+  /* font-weight: 600; */
   color:#ff822c;
   white-space: nowrap;
   transition: 0.3s;
@@ -296,7 +296,8 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: #121212;
+  color:  #ff822c;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -501,7 +502,7 @@ h6 {
 
 #hero .container,
 #hero .container-fluid {
-  padding-top: 84px;
+  padding-top: 20rem;
 }
 
 #hero h1 {
@@ -641,7 +642,7 @@ section {
 }
 
 .section-title-unify h2 {
-  color:rgba(50,185,232,255);
+  /* color:rgba(50,185,232,255); */
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
@@ -738,8 +739,8 @@ section {
   padding: 10px 50px 10px 28px;
   border-radius: 5px;
   transition: 0.5s;
-  color: #fff;
-  background: #ff822c;
+  color:  #ff822c;
+  background: #121212;
   position: relative;
 }
 
@@ -823,8 +824,9 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: rgba(50,185,232,255);
+  /* color: rgba(50,185,232,255); */
   transition: ease-in-out 0.3s;
+  color: #121212;
 }
 
 .services .icon-box p {
@@ -1061,8 +1063,8 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #fff;
-  background: #ff822c;
+  background: #121212;
+  color:  #ff822c;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1245,7 +1247,7 @@ section {
   font-size: 36px;
   color: rgba(50,185,232,255);
   font-weight: 600;
-  font-family: "Roboto", sans-serif;
+  font-family:  'Montserrat', sans-serif;
   margin-bottom: 20px;
 }
 
@@ -1301,7 +1303,7 @@ section {
   transition: none;
   font-size: 15px;
   font-weight: 400;
-  font-family: "Roboto", sans-serif;
+  font-family:  'Montserrat', sans-serif;
   font-weight: 600;
   transition: 0.3s;
 }
@@ -1367,7 +1369,7 @@ section {
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: "Roboto", sans-serif;
+  font-family:  'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -1443,7 +1445,7 @@ section {
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: rgba(50,185,232,255);
+  /* color: rgba(50,185,232,255); */
   font-weight: 700;
   margin: 10px 0;
 }
@@ -1524,10 +1526,10 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: rgba(50, 185, 232, 1);
+  background: #121212;
   border: 0;
   padding: 10px 24px;
-  color: #fff;
+  color:  #ff822c;
   transition: 0.4s;
   border-radius: 5px;
 }
@@ -1615,9 +1617,10 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  color: #fff;
+
   font-size: 14px;
-  background: #ff822c;
+  background: #121212;
+  color:  #ff822c;
   background-size: cover;
 }
 
@@ -1643,7 +1646,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family:  'Montserrat', sans-serif;;
+  font-family:  'Montserrat', sans-serif;
 }
 
 #footer .footer-top h4 {
@@ -1681,7 +1684,8 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: rgba(255, 255, 255, 0.8);
+ 
+  color:  #ff822c;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -1689,7 +1693,7 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: underline;
-  color: #fff;
+  color:rgba(50,185,232,255);
 }
 
 #footer .footer-newsletter {
@@ -1728,15 +1732,16 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: rgba(50, 185, 232, 1);
-  color: #fff;
+  background: #121212;
+  color:  #ff822c;
   transition: 0.3s;
   border-radius: 0 5px 5px 0;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 #footer .footer-newsletter form input[type=submit]:hover {
-  background: #ff822c;
+  background: #121212;
+  color:  #ff822c;
 }
 
 #footer .copyright-wrap {
@@ -1756,8 +1761,8 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: #121212;
+  color:  #ff822c;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1769,8 +1774,8 @@ section {
 }
 
 #footer .social-links a:hover {
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
+  background: #121212;
+  color:  #ff822c;
   text-decoration: none;
 }
 
@@ -1786,7 +1791,8 @@ section {
 
 .unify-container h1 {
     font-size: 28px;
-    color: rgba(50, 185, 232, 1);
+
+    color: #121212;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -1805,7 +1811,7 @@ section {
 
 .unify-section h2 {
   font-size: 22px;
-  color: rgba(243, 139, 88, 1);
+  /* color: rgba(243, 139, 88, 1); */
   margin-bottom: 10px;
   display: flex;
   align-items: center;
@@ -1835,8 +1841,8 @@ section {
 .contact-btn a {
     text-decoration: none;
     font-size: 16px;
-    background: #ff822c;
-    color: #ffffff;
+    background-color: #121212;
+    color:  #ff822c;
     padding: 12px 20px;
     border-radius: 4px;
     transition: background 0.3s ease;
@@ -1891,9 +1897,9 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-around; /* Ensures space allocation between logo and menu */
-  background-color: #ffffff;
+  background-color: #121212;
   padding: 0px 15px;
-  border-bottom: 1px solid rgba(50,185,232,255);
+  /* border-bottom: 1px solid rgba(50,185,232,255); */
   position: fixed;
   top: 0;
   width: 100%;
@@ -1934,8 +1940,8 @@ section {
 .cta a {
   text-decoration: none;
   font-size: 16px;
-  background: #32b9e8;
-  color: #ffffff;
+  background: #121212;
+  color:  #ff822c;
   padding: 12px 20px;
   border-radius: 4px;
   transition: background 0.3s ease;
@@ -2070,7 +2076,7 @@ section {
 .section-title {
   font-size: 24px;
   font-weight: bold;
-  color: rgba(50, 185, 232, 1); /* Blue color */
+  
   margin-bottom: 10px;
 }
 
@@ -2121,9 +2127,9 @@ section {
 }
 
 .feature-title,.expertise-title,.achievements-title {
-  font-size: 2rem; /* Large heading */
+  font-size: 1.5rem; /* Large heading */
   font-weight: bold;
-  color: rgba(50,185,232,255); /* Primary color */
+  /* color: rgba(50,185,232,255); Primary color */
   margin-bottom: 20px;
 }
 
@@ -2144,9 +2150,7 @@ section {
   font-size: 1rem;
 }
 
-.feature-list strong,.expertise-list strong, .achievements-list strong {
-  color:#ff822c; /* Highlight keywords */
-}
+
 
 .call-to-action {
   font-size: 1rem;
