@@ -135,14 +135,14 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  background: white;
+  /* background: white; */
 }
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: white;
-  padding: 15px 0;
-  border-bottom: solid 5px #ff822c;
+  /* background: white; */
+  /* padding: 15px 0; */
+  /* border-bottom: solid 5px #ff822c; */
 }
 
 #header .logo {
@@ -1897,17 +1897,14 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-around; /* Ensures space allocation between logo and menu */
-  background-color: #121212;
+  background:rgba(18, 18, 18, 0.9);
   padding: 0px 15px;
   /* border-bottom: 1px solid rgba(50,185,232,255); */
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  /* background: url('../img/wave.png') no-repeat center center / cover; */
-
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-
+  
   
   
 }
