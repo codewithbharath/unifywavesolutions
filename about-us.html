@@ -3,7 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unifywave Solutions</title>
+    <meta name="description" content="UnifyWave Solutions - Features That Never End. Providing top-notch digital solutions.">
+    <meta name="author" content="UnifyWave Solutions">
+    <meta name="keywords" content="UnifyWave, digital solutions, IT services, technology,Digital Solutions, IT Services, AI Solutions, Web Development, E-comerce,Wordpress ,IoT, Python, Java">
+    <meta property="og:title" content="UnifyWave Solutions - Features That Never End">
+  <meta property="og:description" content="Providing cutting-edge digital solutions with the latest technology.">
+  <meta property="og:image" content="https://unifywavesolutions.com/assets/img/logo.png">
+  <meta property="og:url" content="https://unifywavesolutions.com">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="UnifyWave Solutions">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="UnifyWave Solutions - Features That Never End">
+  <meta name="twitter:description" content="Your one-stop solution for digital transformation.">
+  <meta name="twitter:image" content="https://unifywavesolutions.com/assets/img/twitter-image.jpg">
+  <meta name="twitter:site" content="@UnifyWave">
+  <meta name="twitter:creator" content="@UnifyWave">
+  
+    <title>Unifywave Solutions- Features That Never End</title>
+  
+    <link rel="icon" href="https://unifywavesolutions.com/assets/img/logo.png" type="image/x-icon">
+  
+    <!-- Favicons -->
+    <link href="assets/img/logo.png" rel="icon">
+    <link href="assets/img/logo.png" rel="apple-touch-icon">
+  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         * {
@@ -579,10 +604,7 @@ let videoWasPlaying = false;
         if (video.src !== selectedSource.src) {
             video.src = selectedSource.src;
             video.load();
-            // video.play().catch(error => {
-            //     document.getElementById('playOverlay').style.display = 'block';
-            // });
-            // qualityInfo.textContent = `Playing ${selectedSource.label} version`;
+
             video.play().then(() => {
         // Autoplay worked
         playOverlay.style.display = 'none';
@@ -593,7 +615,7 @@ let videoWasPlaying = false;
                 video.controls = false;
                 isPlaying = false
             });
-            setTimeout(() => qualityInfo.style.opacity = '0', 3000);
+            // setTimeout(() => qualityInfo.style.opacity = '0', 3000);
         }
     }
 
