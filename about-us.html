@@ -58,7 +58,7 @@
 
         .mute-btn {
             background: none;
-            border: 1px solid rgb(255, 130, 44);
+            border: 1px solid rgba(50,185,232,255);
             color: rgb(255, 130, 44);
             padding: 8px 15px;
             border-radius: 20px;
@@ -122,7 +122,7 @@
         .feature-card {
             padding: 25px;
             background: rgba(255, 130, 44, 0.05);
-            border: 1px solid rgba(255, 130, 44, 0.1);
+            border: 1px solid rgba(50,185,232,255);
             border-radius: 10px;
             transition: transform 0.3s ease;
             min-height: 250px;
@@ -209,8 +209,67 @@
         transform: rotate(45deg);
         margin-bottom: 5px;
     }
+    /* Update header-right gap */
+    .header-right {
+        gap: 15px;
+    }
+
+    .header-button {
+        background: rgba(255, 130, 44, 0.1);
+        border: 1px solid rgba(50,185,232,255);
+        color: rgb(255, 130, 44);
+        padding: 8px 12px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.9rem;
+    }
+
+    .header-button:hover {
+        background: rgba(255, 130, 44, 0.2);
+    }
+
+    .share-dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .share-options {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        background: rgb(18, 18, 18);
+        border: 1px solid rgba(255, 130, 44, 0.2);
+        border-radius: 8px;
+        padding: 10px;
+        min-width: 150px;
+        margin-top: 10px;
+    }
+
+    .share-options a {
+        color: rgb(255, 130, 44);
+        text-decoration: none;
+        display: block;
+        padding: 8px;
+        border-radius: 4px;
+    }
+
+    .share-options a:hover {
+        background: rgba(255, 130, 44, 0.1);
+    }
+
+    .show-share {
+        display: block;
+    }
 
     @media (max-width: 768px) {
+        .logo-right{
+            display: none;
+        }
         .scroll-down-arrow {
             width: 40px;
             height: 40px;
@@ -226,7 +285,7 @@
 
         @media (max-width: 768px) {
             .compact-header {
-                padding: 12px 0px;
+                padding: 12px 10px;
             }
             .who-we-are-text {
         font-size: 1rem;
@@ -253,10 +312,30 @@
     <header class="compact-header">
         <div class="header-left"> <img src="assets/img/logo.png" alt="Unifywave Logo Left" class="logo-img">
             <img src="assets/img/unifywave.png" alt="Unifywave Logo Right" class="logo-right"></div>
-        <div class="header-right">
-            <a href="http://unifywavesolutions.com" class="header-link" target="_blank">Visit Site</a>
-            <button onclick="toggleMute()" class="mute-btn">Unmute</button>
-        </div>
+            <div class="header-right">
+                <button class="header-button" onclick="togglePlay()">
+                    <i id="videoPlayPassIcon" class="fas fa-pause"></i>
+                </button>
+                <button class="header-button mute-btn" onclick="toggleMute()">
+                    <i id="audioMuteUnmuteIcon" class="fas fa-volume-up"></i>
+                </button>
+                <div class="share-dropdown">
+                    <button class="header-button" onclick="toggleShare()">
+                        <i class="fas fa-share"></i>
+                    </button>
+                    <div class="share-options" id="shareOptions">
+                        <a href="#" onclick="copyLink()">
+                            <i class="fas fa-link"></i> Copy Link
+                        </a>
+                        <a href="mailto:?subject=Check%20Out%20Unifywave%20Solutions&body=Visit%20Unifywave%20Solutions%20-%20http%3A%2F%2Funifywavesolution.com">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                    </div>
+                </div>
+                <a href="http://unifywavesolutions.com" class="header-button" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> Visit Site
+                </a>
+            </div>
     </header>
 
     <!-- Video Banner -->
@@ -264,8 +343,8 @@
         <div class="scroll-down-arrow" onclick="scrollToWhoWeAre()">
             <div class="arrow-icon"></div>
         </div>
-        <video id="banner-video" autoplay muted loop playsinline>
-            <source src="/assets/video/unifywavesolutions.mp4" type="video/mp4">
+        <video id="banner-video" autoplay loop playsinline>
+            <source src="/assets/video/unifywave-mobile.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
     </section>
@@ -324,28 +403,76 @@
             <i class="fas fa-globe"></i><a href="http://unifywavesolutions.com" target="_blank">unifywavesolution.com</a>
         </div>
         <div class="contact-item">
-            <i class="fas fa-phone"></i>+1 (555) 123-4567
+            <i class="fas fa-phone"></i>+971 52 407 0446
         </div>
         <div class="contact-item">
-            <i class="fas fa-envelope"></i>contact@unifywave.com
+            <i class="fas fa-envelope"></i>contact@unifywavesolutions.com
         </div>
         <div class="contact-item">
             <i class="fas fa-map-marker-alt"></i>Global Solutions Provider
         </div>    </section>
 
     <script>
-        function toggleMute() {
-            const video = document.getElementById('banner-video');
-            const btn = document.querySelector('.mute-btn');
-            video.muted = !video.muted;
-            btn.textContent = video.muted ? 'Unmute' : 'Mute';
+         // Video Controls
+    const video = document.getElementById('banner-video');
+    let isPlaying = true;
+    const playIcon = document.querySelector('#videoPlayPassIcon');
+
+    function togglePlay() {
+        if(isPlaying) {
+            video.pause();
+            playIcon.classList.replace('fa-pause', 'fa-play');
+
+        } else {
+            video.play();
+            playIcon.classList.replace('fa-play', 'fa-pause');
+
         }
+        isPlaying = !isPlaying;
+    }
+
+    function toggleMute() {
+        video.muted = !video.muted;
+        const icon = document.querySelector('#audioMuteUnmuteIcon');
+        if(video.muted) {
+            icon.classList.replace('fa-volume-up', 'fa-volume-mute');
+        } else {
+            icon.classList.replace('fa-volume-mute', 'fa-volume-up');
+        }
+    }
+
+    // Share Controls
+    function toggleShare() {
+        document.getElementById('shareOptions').classList.toggle('show-share');
+    }
+
+    function copyLink() {
+        navigator.clipboard.writeText(window.location.href)
+            .then(() => alert('Link copied to clipboard!'))
+            .catch(err => console.error('Could not copy text: ', err));
+    }
+
+    // Close share dropdown when clicking outside
+    window.onclick = function(event) {
+        if (!event.target.matches('.header-button')) {
+            const dropdowns = document.getElementsByClassName("share-options");
+            for (let i = 0; i < dropdowns.length; i++) {
+                const openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show-share')) {
+                    openDropdown.classList.remove('show-share');
+                }
+            }
+        }
+    }
+      
 
         // Initialize video play
         window.addEventListener('DOMContentLoaded', function() {
             const video = document.getElementById('banner-video');
             video.play().catch(error => {
                 console.log('Video autoplay prevented');
+                playIcon.classList.replace('fa-pause', 'fa-play');
+
             });
         });
         function scrollToWhoWeAre() {
