@@ -23,8 +23,8 @@
             position: fixed;
             top: 0;
             width: 100%;
-            padding: 0px 30px;
-            background-color: rgba(18, 18, 18, 0.5);
+            padding: 11px 30px;
+            background-color: rgba(18, 18, 18,1);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -318,11 +318,18 @@
     .show-share {
         display: block;
     }
+    #who-we-are{
+        scroll-margin-top: 70px; 
+       
+    }
 
     @media (max-width: 768px) {
         .logo-right{
             display: none;
         }
+        #who-we-are{
+        scroll-margin-top: 70px; 
+    }
         .scroll-down-arrow {
             width: 40px;
             height: 40px;
@@ -535,10 +542,13 @@
     
 document.addEventListener('DOMContentLoaded', function() {
     const video = document.getElementById('banner-video');
-
+    let isVideoPlaying = false;
     
     const qualityInfo = document.getElementById('qualityInfo');
-    
+
+// Handle scroll position for video section
+let lastScrollPos = 0;
+let videoWasPlaying = false;
     const videoSources = [
         {
             minWidth: 1000,
@@ -573,7 +583,10 @@ document.addEventListener('DOMContentLoaded', function() {
             //     document.getElementById('playOverlay').style.display = 'block';
             // });
             // qualityInfo.textContent = `Playing ${selectedSource.label} version`;
-            video.play().catch(error => {
+            video.play().then(() => {
+        // Autoplay worked
+        playOverlay.style.display = 'none';
+    }).catch(error => {
                 console.log('Video autoplay prevented');
                 playIcon.classList.replace('fa-pause', 'fa-play');
                 playOverlay.style.display = 'block';
@@ -590,8 +603,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Update on resize with debouncing
     let resizeTimer;
     window.addEventListener('resize', () => {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(setOptimalVideo, 500);
+        // clearTimeout(resizeTimer);
+        setOptimalVideo();
+
+        // resizeTimer = setTimeout(setOptimalVideo, 500);
     });
 });
 
@@ -599,7 +614,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
         function scrollToWhoWeAre() {
+            const header = document.querySelector('.compact-header');
+            togglePlay();
         document.getElementById('who-we-are').scrollIntoView({
+            top:  header.offsetHeight + 'px',
+
             behavior: 'smooth'
         });
     }
