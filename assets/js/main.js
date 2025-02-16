@@ -58,10 +58,14 @@
                 });
             });
 
+
+            if (typeof Lenis !== 'undefined') {
+
             const lenis = new Lenis({
               duration: 1.2,
               easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
           });
+        
           
           function raf(time) {
               lenis.raf(time);
@@ -85,7 +89,7 @@
               scrub: true
           });
 
-         
+        }
         //   const section_2 = document.getElementById("horizontal");
         //   let box_items = gsap.utils.toArray(".horizontal__item");
         //   console.log(box_items)
