@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnifyWave Solutions</title>
+    <style>
+        /* ===== Global Styles ===== */
+        :root {
+            --primary-color: #2A5EE8; /* Brand blue - adjust to match your logo */
+            --text-color: #333;
+            --light-bg: #f9fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ===== Header/Nav ===== */
+        .header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        /* ===== Blog Page Styles ===== */
+        .blog-hero {
+            background: var(--light-bg);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 3rem 0;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .post-date {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* ===== Careers Page Styles ===== */
+        .careers-hero {
+            background: linear-gradient(to right, #2A5EE8, #1a45b5);
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 3rem 0;
+        }
+
+        .value-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .job-list {
+            margin: 2rem 0;
+        }
+
+        .job-role {
+            background: var(--light-bg);
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+
+        /* ===== Footer ===== */
+        .footer {
+            background: var(--text-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        /* ===== Mobile Responsive ===== */
+        @media (max-width: 768px) {
+            .blog-grid, .values-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">UnifyWave</div>
+            <div class="nav-links">
+                <!-- Add your navigation links here -->
+            </div>
+        </nav>
+    </header>
+
+    <!-- Blog Page Content -->
+    <section class="blog-hero">
+        <div class="container">
+            <h1>Insights & Innovation</h1>
+            <p>Stay ahead with our tech insights and company updates</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="blog-grid" id="blogPosts">
+            <!-- Blog posts will be injected here via JS -->
+        </div>
+    </main>
+
+    <!-- Careers Page Content -->
+    <section class="careers-hero">
+        <div class="container">
+            <h1>Join Our Wave</h1>
+            <p>Shape the future of tech with us</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="values-grid" id="valuesSection">
+            <!-- Values injected via JS -->
+        </section>
+
+        <div class="job-list" id="jobList">
+            <!-- Jobs injected via JS -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; <span id="currentYear"></span> UnifyWave Solutions</p>
+    </footer>
+
+    <script>
+        // ===== Blog Posts Data =====
+        const blogPosts = [
+            {
+                title: "Welcome to UnifyWave: Building the Future of Tech",
+                date: "March 15, 2024",
+                excerpt: "At UnifyWave Solutions, we're not just another tech startup...",
+            },
+            // Add other posts here
+        ];
+
+        // ===== Careers Data =====
+        const values = [
+            { title: "Innovate Fearlessly", content: "Experiment, fail, learn, repeat." },
+            { title: "Collaborate Openly", content: "No silos, just shared goals." },
+            { title: "Grow Together", content: "Your success is our success." }
+        ];
+
+        const jobs = [
+            "Software Developers (Frontend, Backend, Full-Stack)",
+            "UX/UI Designers",
+            "Project Managers",
+            "Marketing & Growth Specialists"
+        ];
+
+        // ===== Render Functions =====
+        function renderBlogPosts() {
+            const container = document.getElementById('blogPosts');
+            container.innerHTML = blogPosts.map(post => `
+                <article class="blog-card">
+                    <h2>${post.title}</h2>
+                    <p class="post-date">Posted on ${post.date}</p>
+                    <p>${post.excerpt}</p>
+                    <a href="#" style="color: var(--primary-color); margin-top: 1rem; display: inline-block;">Read more →</a>
+                </article>
+            `).join('');
+        }
+
+        function renderValues() {
+            const container = document.getElementById('valuesSection');
+            container.innerHTML = values.map(value => `
+                <div class="value-card">
+                    <h3>${value.title}</h3>
+                    <p>${value.content}</p>
+                </div>
+            `).join('');
+        }
+
+        function renderJobs() {
+            const container = document.getElementById('jobList');
+            container.innerHTML = jobs.map(job => `
+                <div class="job-role">
+                    <h3>${job}</h3>
+                    <button style="background: var(--primary-color); color: white; border: none; padding: 0.5rem 1rem; margin-top: 1rem; border-radius: 5px;">Apply Now</button>
+                </div>
+            `).join('');
+        }
+
+        // ===== Initialize =====
+        document.addEventListener('DOMContentLoaded', () => {
+            // Render dynamic content
+            renderBlogPosts();
+            renderValues();
+            renderJobs();
+
+            // Update copyright year
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+            // Add smooth scroll behavior
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

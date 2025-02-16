@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="UnifyWave Solutions - Features That Never End. Providing top-notch digital solutions.">
+    <meta name="author" content="UnifyWave Solutions">
+    <meta name="keywords"
+        content="UnifyWave, digital solutions, IT services, technology,Digital Solutions, IT Services, AI Solutions, Web Development, E-comerce,Wordpress ,IoT, Python, Java">
+    <meta property="og:title" content="UnifyWave Solutions - Features That Never End">
+    <meta property="og:description" content="Providing cutting-edge digital solutions with the latest technology.">
+    <meta property="og:image" content="https://unifywavesolutions.com/assets/img/logo.png">
+    <meta property="og:url" content="https://unifywavesolutions.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="UnifyWave Solutions">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="UnifyWave Solutions - Features That Never End">
+    <meta name="twitter:description" content="Your one-stop solution for digital transformation.">
+    <meta name="twitter:image" content="https://unifywavesolutions.com/assets/img/twitter-image.jpg">
+    <meta name="twitter:site" content="@UnifyWave">
+    <meta name="twitter:creator" content="@UnifyWave">
+
+    <title>Unifywave Solutions- Features That Never End</title>
+
+    <link rel="icon" href="https://unifywavesolutions.com/assets/img/logo.png" type="image/x-icon">
+
+    <!-- Favicons -->
+    <link href="assets/img/logo.png" rel="icon">
+    <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.20/dist/lenis.css">
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "UnifyWave Solutions",
+      "url": "https://unifywavesolutions.com",
+      "description": "Providing cutting-edge digital solutions through the latest technologies.",
+      "sameAs": [
+        "https://www.facebook.com/unifywave",
+        "https://www.linkedin.com/company/unifywave"
+      ]
+    }
+    </script>
+<style>
+        .post-card-content p{
+            color:var(--text-color)
+        }
+        .post-meta span{
+            color:var(--primary)
+        }
+
+        /* Blog Container */
+        .blog-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: 1fr 0.35fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        /* Featured Post */
+        .featured-post {
+            margin-bottom: 4rem;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .featured-post img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .featured-content {
+            padding: 2rem;
+            /* background: rgba(18, 18, 18, 0.95); */
+        }
+        .featured-content a,p {
+            color:var(--text-color)
+        }
+
+        .post-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        .featured-post h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        /* Posts Grid */
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .post-card {
+            background: rgba(18, 18, 18, 0.95);
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .post-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .post-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .post-card-content {
+            padding: 1.5rem;
+        }
+
+        .post-card h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        /* Sidebar */
+        .blog-sidebar {
+            position: sticky;
+            top: 100px;
+            background:rgba(18, 18, 18, 0.95);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* Search Widget */
+        .search-widget {
+            margin-bottom: 2rem;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+        }
+
+        /* Categories Widget */
+        .categories-list {
+            list-style: none;
+        }
+
+        .categories-list li {
+           
+            margin-bottom: 0.5rem;
+        }
+
+        .categories-list a {
+            color: var(--text-color);
+            display: block;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .categories-list a:hover {
+            background: #E5671F;
+            color: var(--dark);
+        }
+
+        /* Pagination */
+        .pagination {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 3rem 0;
+        }
+
+        .page-number {
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            background: #f1f5f9;
+            color: var(--dark);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .page-number:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        @media (max-width: 1024px) {
+            .blog-container {
+                grid-template-columns: 1fr;
+            }
+
+            .blog-sidebar {
+                position: static;
+                order: -1;
+                margin-bottom: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .featured-post h1 {
+                font-size: 2rem;
+            }
+
+            .posts-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+</style>
+   
+</head>
+
+
+
+<header class="glass-header">
+    <nav class="nav-container">
+
+        <a href="/index.html#" class="logo-container">
+            <div class="logo-images">
+                <img src="/assets/img/logo.png" alt="Brand Icon" class="logo-icon">
+                <img src="/assets/img/unifywave.png" alt="Brand Name" class="logo-text">
+            </div>
+        </a>
+        <div class="phone-call">
+            <a href="tel:+915551234567" class="phone-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+        </div>
+
+        <button class="menu-toggle">
+            <div class="hamburger"></div>
+        </button>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="/index.html#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item"><a href="/index.html#about" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="/software-solutions.html" class="nav-link">Solutions</a></li>
+
+            <li class="nav-item">
+                <a href="/index.html#services" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown">
+                    <a class="dropdown-link"  href="/services/e-commerce.html">E-Commerce Solutions</a>    
+                    <a class="dropdown-link" href="/services/mobile-app.html">Mobile App Solutions</a>
+                    <a class="dropdown-link" href="/services/automation-data-analysis.html">Automation &amp; Data Analysis</a>
+                    <a class="dropdown-link" href="/services/web-design-dev.html">BooM Your Web Solutions</a>
+                    <a class="dropdown-link" href="/services/frontend.html">UI/UX Solutions</a>
+                    
+                    <a class="dropdown-link" href="/services/iot.html">IoT Solutions</a>
+                            
+                             
+                </div>
+            </li>
+            <li class="nav-item"><a href="/index.html#portfolio" class="nav-link">Portfolio</a></li>
+            <li class="nav-item"><a href="/blog.html" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="/career.html" class="nav-link">Careers</a></li>
+            <li class="nav-item"> <a href="http://unifywavesolutions.com" class="cta-button cta-btn-menu"
+                    target="_blank">
+                    <i class="fas fa-phone"></i> Become a Client
+                </a></li>
+
+            <!-- <li class="nav-item">
+                <button class="cta-button">Become a Client</button>
+            </li> -->
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div class="blog-container">
+        <main>
+            <!-- Featured Post -->
+            <article class="featured-post">
+                <img src="assets/img/blogs/ai-trends.png" alt="Featured Post">
+                <div class="featured-content">
+                    <div class="post-meta">
+                        <span>AI & Machine Learning</span>
+                        <span>March 15, 2024</span>
+                    </div>
+                    <h1>Transforming Business Operations with AI-Powered Automation</h1>
+                    <p>Discover how modern enterprises are leveraging machine learning to optimize workflows and enhance productivity...</p>
+                    <a href="/index.html#" class="read-more">Read Article →</a>
+                </div>
+            </article>
+
+            <!-- Recent Posts Grid -->
+            <div class="posts-grid">
+                <!-- Post Card 1 -->
+                <article class="post-card">
+                    <img src="assets/img/blogs/iot.jpg" alt="IoT Security">
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span>IoT Solutions</span>
+                            <span>March 12, 2024</span>
+                        </div>
+                        <h3>Securing IoT Ecosystems in Smart Cities</h3>
+                        <p>Best practices for implementing robust security measures in urban IoT deployments...</p>
+                    </div>
+                </article>
+
+                <!-- Post Card 2 -->
+                <article class="post-card">
+                    <img src="/assets/img/blogs/cloud.jpg" alt="Cloud Computing">
+                    <div class="post-card-content">
+                        <div class="post-meta">
+                            <span>Cloud Solutions</span>
+                            <span>March 10, 2024</span>
+                        </div>
+                        <h3>Hybrid Cloud Strategies for Enterprise Scalability</h3>
+                        <p>Optimizing cloud infrastructure for seamless business operations...</p>
+                    </div>
+                </article>
+
+                <!-- Add more post cards -->
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="/index.html#" class="page-number">1</a>
+                <a href="/index.html#" class="page-number">2</a>
+                <a href="/index.html#" class="page-number">3</a>
+            </div>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="blog-sidebar">
+            <!-- Search Widget -->
+            <div class="search-widget">
+                <input type="text" class="search-input" placeholder="Search articles...">
+            </div>
+
+            <!-- Categories Widget -->
+            <div class="categories-widget">
+                <h3>Categories</h3>
+                <ul class="categories-list">
+                    <li><a href="/index.html#">AI & Machine Learning</a></li>
+                    <li><a href="/index.html#">IoT Development</a></li>
+                    <li><a href="/index.html#">Cloud Solutions</a></li>
+                    <li><a href="/index.html#">Web Development</a></li>
+                    <li><a href="/index.html#">Digital Transformation</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <div class="content-container">
+    <div class="cta-banner">
+        <h3>Ready to Transform Your Business?</h3>
+        <div class="cta-content">
+          <p>50+ Successful Projects Delivered | Certified Experts | 24/7 Support</p>
+          <a href="/index.html#contact" class="cta-button">
+            Schedule Free Consultation →
+          </a>
+        </div>
+      </div>
+      </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Unifywave Solutions</h4>
+                <ul class="footer-links">
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/careers">Careers</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="/web-development">Web Development</a></li>
+                    <li><a href="/mobile-apps">Mobile Apps</a></li>
+                    <li><a href="/cloud-solutions">Cloud Solutions</a></li>
+                    <li><a href="/iot">IoT Solutions</a></li>
+                    <li><a href="/devops">DevOps Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul class="footer-links">
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms of Service</a></li>
+                    <li><a href="/cookies">Cookie Policy</a></li>
+                    <li><a href="/security">Security</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <!-- <li>No199/2 Triplicane, Chennai</li>
+                <li>Tamil Nadu 600005</li> -->
+                    <li>Phone: +91 555 123 4567</li>
+                    <li>Email: contact@unifywavesolutions.com</li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/unifywave-solutions/?viewAsMember=true"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="/index.html#"><i class="fab fa-twitter"></i></a>
+                    <a href="/index.html#"><i class="fab fa-github"></i></a>
+                    <a href="/index.html#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Unifywave Solutions. All rights reserved.</p>
+            <p>Business UAE : 100% Cloud Base startup</p>
+
+            <p>Development India Office: Chennai, TamilNadu, India</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
