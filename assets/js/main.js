@@ -66,7 +66,7 @@ if (document.getElementById("modernContactForm")) {
             .addClass("success")
             .text(response)
             .fadeIn();
-            $("#contact-form")[0].reset(); // Optionally reset the form
+            $("#modernContactForm")[0].reset(); // Optionally reset the form
           },
           error: function (err) {
             console.log(err)
