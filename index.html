@@ -60,8 +60,8 @@
 
     <a href="#" class="logo-container">
       <div class="logo-images">
-        <img src="/assets/img/logo.png" alt="Brand Icon" class="logo-icon">
-        <img src="/assets/img/unifywave.png" alt="Brand Name" class="logo-text">
+        <img src="/assets/img/unifywave-log.png" alt="Brand Icon" class="logo-icon">
+        <!--  -->
       </div>
     </a>
     <div class="phone-call">
@@ -341,7 +341,7 @@
             </div>
             <div class="cert-card">
               <div class="cert-icon">🏆</div>
-              <p>Top IoT Development Firm 2023</p>
+              <p>Top IoT Development Firm 2024</p>
             </div>
             <div class="cert-card">
               <div class="cert-icon">📜</div>
@@ -600,26 +600,27 @@
       </div>
 
       <!-- Contact Form -->
-      <form class="contact-form-modern" id="modernContactForm">
+      <form class="contact-form-modern" id="modernContactForm" >
           <h2 style="margin-bottom: 30px; color: #FF822C;">Get in Touch</h2>
-          
+          <div id="response-message"></div>
+
           <div class="form-group">
-              <input type="text" class="form-input-modern" required placeholder=" ">
+              <input type="text" name="name" id="name" class="form-input-modern" required placeholder=" ">
               <label class="form-label">Full Name</label>
           </div>
           
           <div class="form-group">
-              <input type="email" class="form-input-modern" required placeholder=" ">
+              <input type="email" name="email" id="email" class="form-input-modern" required placeholder=" ">
               <label class="form-label">Email Address</label>
           </div>
           
           <div class="form-group">
-              <input type="tel" class="form-input-modern" required placeholder=" ">
+              <input type="tel" name="phoneNumber" id="phoneNumber" class="form-input-modern" required placeholder=" ">
               <label class="form-label">Phone Number</label>
           </div>
           
           <div class="form-group">
-              <textarea class="form-input-modern" rows="4" required placeholder=" "></textarea>
+              <textarea class="form-input-modern" rows="4" name="message" id="message" required placeholder=" "></textarea>
               <label class="form-label">Your Message</label>
           </div>
           
@@ -634,7 +635,7 @@
   <footer class="footer">
     <div class="footer-container">
         <div class="footer-section">
-            <h4>Unifywave Solutions</h4>
+          <img src="/assets/img/unifywave.png" alt="Brand Name" class="logo-text">
             <ul class="footer-links">
                 <li><a href="/about">About Us</a></li>
                 <li><a href="/careers">Careers</a></li>

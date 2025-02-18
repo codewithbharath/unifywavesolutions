@@ -7,6 +7,40 @@
 (function() {
   "use strict";
  
+  $("#modernContactForm").submit(function (event) {
+    event.preventDefault(); // Prevent the form from reloading the page
+
+    // Collect form data
+    const formData = {
+      name: $("#name").val(),
+      name: $("#phoneNumber").val(),
+      email: $("#email").val(),
+      message: $("#message").val(),
+    };
+
+    // Send the form data to send-email.php using AJAX
+    $.ajax({
+      type: "POST",
+      url: "send-email.php",
+      data: formData,
+      success: function (response) {
+        $("#response-message")
+        .removeClass("error")
+        .addClass("success")
+        .text(response)
+        .fadeIn();
+        $("#contact-form")[0].reset(); // Optionally reset the form
+      },
+      error: function (err) {
+        console.log(err)
+        $("#response-message")
+        .removeClass("success")
+        .addClass("error")
+        .text("An error occurred. Please try again.")
+        .fadeIn();
+      },
+    });
+  });
   const mobileMenuBtn = document.querySelector('.menu-toggle');
             const navMenu = document.querySelector('.nav-menu');
             const navItems = document.querySelectorAll('.nav-item');

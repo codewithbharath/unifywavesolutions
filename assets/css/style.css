@@ -288,7 +288,6 @@ h4:hover {
 }
 
 .logo-icon {
-  width: 70px;
   height: 70px;
   object-fit: contain;
 }
@@ -297,7 +296,8 @@ h4:hover {
   height: 22px;
   width: auto;
   object-fit: contain;
-  margin-left:-8px;
+  margin-bottom: 2.2rem;
+  /* margin-left:-8px; */
 }
 
 /* Optional hover effect */
@@ -1531,8 +1531,7 @@ cta-banner::after{
     padding: 1.5rem;
 }
   .logo-icon {
-    width: 60px;
-    height: 60px;
+    height: 70px;
   }
   
   .logo-text {
@@ -1541,7 +1540,7 @@ cta-banner::after{
   
 
   .nav-container {
-      padding: 0px 20px 0px 0px;
+      padding: 1rem;
   }
 
   .mobile-menu-btn {
@@ -1552,7 +1551,7 @@ cta-banner::after{
 
   .nav-menu {
       position: fixed;
-      top: 3.9rem;
+      top: 6.4rem;
       right: -100%;
       width: 80%;
       height: calc(100vh - 4.5rem);
@@ -1666,5 +1665,27 @@ cta-banner::after{
     width: 40px;
     height: 40px;
   }
+}
+
+/* For Success */
+#response-message.success {
+  display: block;
+  color: #155724;
+  /* background-color: #d4edda; */
+  border: 1px solid #c3e6cb;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+/* For Error */
+#response-message.error {
+  display: block;
+  color: #721c24;
+  /* background-color: #f8d7da; */
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
 }
 
