@@ -296,7 +296,8 @@ h4:hover {
   height: 22px;
   width: auto;
   object-fit: contain;
-  margin-bottom: 2.2rem;
+  margin-bottom: 1.2rem;
+  margin-top: 1rem;
   /* margin-left:-8px; */
 }
 
