@@ -93,17 +93,22 @@ if (document.getElementById("modernContactForm")) {
                 navMenu.classList.toggle('active');
                 document.body.classList.toggle('no-scroll');
             });
-
+            let prev = document.querySelector('.nav-link.active'); 
             // Handle dropdowns on mobile
             navItems.forEach(item => {
                 console.log(item)
-                if (item.querySelector('.dropdown')) {
+                // if (item.querySelector('.dropdown')) {
                     const link = item.querySelector('.nav-link');
+                    if(link){
                     link.addEventListener('click', (e) => {
-                        if (window.innerWidth <= 768) {
-                            e.preventDefault();
-                            item.classList.toggle('active');
-                        }
+                        // if (window.innerWidth <= 768) {
+                            // e.preventDefault();
+                            // navItems.forEach(item => item.querySelector('.nav-link').classList.remove('active'));
+                          
+                            e.currentTarget.classList.toggle('active');
+                            prev.classList.remove('active')
+                            prev= document.querySelector('.nav-link.active');
+                        // }
                     });
                 }
             });

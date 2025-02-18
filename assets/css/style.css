@@ -192,6 +192,10 @@ h4:hover {
 .nav-item {
   position: relative;
 }
+.nav-link.active{
+  background: #E5671F;
+  color: var(--primary-color);
+}
 
 .nav-link {
   color: var(--text-color);
@@ -1594,6 +1598,7 @@ cta-banner::after{
       display: block;
       visibility: visible;
   }
+  
 
   .cta-button {
       margin-top: auto;
