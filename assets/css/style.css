@@ -26,8 +26,8 @@ body {
   --dark: #0A0A0A;          /* Rich black (not pure #000) */
   --light: #FFFFFF;         /* Pure white */
   --glass-bg:rgba(18, 18, 18, 0.9); /* More transparency */
-  --text-color:#FFFFFF; ; /* Darker text */
-
+  --text-color:#FFFFFF;  /* Darker text */
+  --blue-bg:linear-gradient(180deg, transparent 0%, rgba(15, 23, 42, 0.9) 100%);
 
   /* Derived Colors */
   --primary-hover: #E5671F;  /* 10% darker orange */
@@ -167,6 +167,7 @@ h4:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: var(--blue-bg);
 }
 
 .logo {
@@ -294,9 +295,10 @@ h4:hover {
 
 .logo-icon {
   height: 70px; /* Set the height of the logo image */
-  max-width: 100%; /* Ensures the image doesn't overflow */
+  /* Ensures the image doesn't overflow */
   object-fit: contain; /* Ensures the image maintains its aspect ratio */
 }
+
 
 .logo-text {
   height: 22px;
@@ -331,14 +333,11 @@ h4:hover {
 }
 
 .banner-image {
-  position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    /* height: 100%; */
-    object-fit: cover;
-    z-index: 0;
-    filter: brightness(0.7);
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  object-fit: cover;
+  filter: brightness(0.5);
 }
 
 .banner-overlay {
@@ -353,6 +352,7 @@ h4:hover {
 .banner-content {
   position: absolute;
   top: 10%;
+  left: 0;
   /* left: 57%; */
   /* max-width: 600px; */
   z-index: 2;
@@ -455,7 +455,7 @@ h4:hover {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-  background: #0f0f0f;
+  background: var(--blue-bg);
   padding: 2rem;
 }
 
@@ -463,7 +463,7 @@ h4:hover {
   max-width: 1280px;
   margin: 0 auto;
   padding: 4rem 2rem;
-  background: rgba(18, 18, 18, 0.95);
+  /* background: rgba(18, 18, 18, 0.95); */
   border-radius: 12px;
   border: 1px solid rgba(50, 185, 232, 0.1);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
@@ -711,7 +711,7 @@ h4:hover {
   position: relative;
   min-height: 100vh;
   padding: 4rem 2rem;
-  background: #0f0f0f;
+  background:var(--blue-bg);
   overflow: hidden;
 }
 
@@ -723,7 +723,7 @@ h4:hover {
 }
 
 .service-card {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--blue-bg);
   padding: 2rem;
   border-radius: 15px;
   backdrop-filter: blur(10px);
@@ -733,7 +733,7 @@ h4:hover {
 
 .service-card:hover {
   transform: translateY(-10px);
-  background: rgba(255, 255, 255, 0.08);
+  /* background: rgba(255, 255, 255, 0.08); */
 }
 
 .service-icon {
@@ -764,7 +764,7 @@ h4:hover {
   /* background: linear-gradient(45deg, #3b82f6, #6366f1); */
   border-radius: 15px;
   margin-top: 4rem;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--blue-bg);
     padding: 2rem;
     border-radius: 15px;
     border-left: 4px solid #3b82f6;
@@ -807,7 +807,7 @@ cta-banner::after{
   position: relative;
   min-height: 100vh;
   padding: 4rem 2rem;
-  background: #0f0f0f;
+  background: var(--blue-bg);
 }
 
 .hero-grid {
@@ -917,7 +917,7 @@ cta-banner::after{
   position: relative;
   overflow: hidden;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--blue-bg);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
   /* Card Hover Effect */
@@ -1081,7 +1081,7 @@ cta-banner::after{
 }
 
 .contact-section {
-  padding: 80px 20px;
+  padding: 30px 20px;
   position: relative;
   overflow: hidden;
 }
@@ -1104,7 +1104,7 @@ cta-banner::after{
 }
 
 .contact-info-blur {
-  background: rgba(18, 18, 18, 0.6);
+  background: var(--blue-bg);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 40px;
@@ -1113,7 +1113,7 @@ cta-banner::after{
 }
 
 .contact-form-modern {
-  background: rgba(18, 18, 18, 0.8);
+  background: var(--blue-bg);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 40px;
@@ -1231,7 +1231,7 @@ cta-banner::after{
 }
 
 .footer {
-  background-color: rgb(18, 18, 18);
+  background: var(--blue-bg);
   color: rgba(255, 255, 255, 0.8);
   padding:3rem 2rem;
   border-top: 1px solid rgba(255, 130, 44, 0.1);
@@ -1329,13 +1329,9 @@ cta-banner::after{
 }
 
 /* ========== Footer ========== */
-.footer {
-  background: var(--dark);
-  border-top: 2px solid var(--primary);
-}
 
 .footer-links a {
-  color: var(--secondary);
+  color: var(--text-color);
 }
 
 .footer-links a:hover {
@@ -1395,6 +1391,22 @@ cta-banner::after{
   border-radius: 20px;
   font-size: 0.875rem;
 }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* CSS rules for devices between 769px and 1024px wide */
+  .nav-menu{
+    gap: 0rem;
+  }
+  .nav-container{
+    padding: 0rem 1rem 0rem 1rem;
+  }
+  .nav-link{
+    padding: 0.4rem 0.5rem;
+  }
+  .cta-btn-menu{
+    font-size: 12px;
+    padding: 0.5rem 1rem;
+  }
+}
 @media (max-width: 768px) {
   
   :root {
@@ -1431,9 +1443,8 @@ cta-banner::after{
   .menu-toggle.active .hamburger::after {
     transform: rotate(-45deg) translate(5px, -6px);
   }
-  
-  .banner-title {
-      font-size: 1.5rem;
+  .section-title {
+    font-size: 38px;
   }
   
   .banner-subtitle {
@@ -1442,8 +1453,8 @@ cta-banner::after{
   
   .banner-content {
               top: 10%;
-        width: 100%;
         padding: 1rem;
+        width: 100%;
     
       
   }
@@ -1452,7 +1463,7 @@ cta-banner::after{
   }
   .banner-image{
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
   }
   .hero-grid {
     grid-template-columns: 1fr;
@@ -1547,6 +1558,7 @@ cta-banner::after{
   height: 65px; /* Set the height of the logo image */
   max-width: 100%; /* Ensures the image doesn't overflow */
   object-fit: contain; /* Ensures the image maintains its aspect ratio */
+  filter: brightness(1.3);
 }
   .logo-text {
     height: 20px;
@@ -1555,7 +1567,7 @@ cta-banner::after{
 
   .nav-container {
       padding: 0rem 1rem 0rem 1rem;
-      justify-content: space-around;
+      justify-content: space-between;
   }
 
   .mobile-menu-btn {
@@ -1620,7 +1632,7 @@ cta-banner::after{
 }
 
 .expertise-banner {
-  background: var(--dark);
+  background: var(--blue-bg);
   padding: 4rem 2rem;
   border-radius: 20px;
   margin: 4rem 0;
