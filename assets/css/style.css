@@ -161,9 +161,9 @@ h4:hover {
 }
 
 .nav-container {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
-  /* padding: 1rem 2rem; */
+  padding:0.2rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -288,8 +288,9 @@ h4:hover {
 }
 
 .logo-icon {
-  height: 70px;
-  object-fit: contain;
+  height: 70px; /* Set the height of the logo image */
+  max-width: 100%; /* Ensures the image doesn't overflow */
+  object-fit: contain; /* Ensures the image maintains its aspect ratio */
 }
 
 .logo-text {
@@ -1531,10 +1532,11 @@ cta-banner::after{
 .professional-card {
     padding: 1.5rem;
 }
-  .logo-icon {
-    height: 70px;
-  }
-  
+.logo-icon {
+  height: 65px; /* Set the height of the logo image */
+  max-width: 100%; /* Ensures the image doesn't overflow */
+  object-fit: contain; /* Ensures the image maintains its aspect ratio */
+}
   .logo-text {
     height: 20px;
   }
