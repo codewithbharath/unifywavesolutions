@@ -67,6 +67,8 @@ if (document.getElementById("modernContactForm")) {
             .text(response)
             .fadeIn();
             $("#modernContactForm")[0].reset(); // Optionally reset the form
+            $("#response-message").delay(1000).fadeOut();
+
           },
           error: function (err) {
             console.log(err)
@@ -75,6 +77,8 @@ if (document.getElementById("modernContactForm")) {
             .addClass("error")
             .text("An error occurred. Please try again.")
             .fadeIn();
+            $("#response-message").delay(1000).fadeOut();
+
           },
         });
       });
