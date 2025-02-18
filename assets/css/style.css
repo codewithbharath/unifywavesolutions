@@ -246,11 +246,12 @@ h4:hover {
   transition: background var(--transition-speed);
 }
 
-.dropdown-link:hover {
+.dropdown-link:hover ,.dropdown-link.active {
     background: #E5671F;
     color: var(--primary-color);
 
 }
+
 
 /* CTA Button */
 .cta-button {
@@ -1594,7 +1595,7 @@ cta-banner::after{
       transform: none;
   }
 
-  .nav-item.active .dropdown {
+  .dropdown.active {
       display: block;
       visibility: visible;
   }
