@@ -1541,7 +1541,7 @@ cta-banner::after{
   
 
   .nav-container {
-      padding: 1rem;
+      padding: 0rem 1rem 0rem 1rem;
   }
 
   .mobile-menu-btn {
@@ -1552,7 +1552,7 @@ cta-banner::after{
 
   .nav-menu {
       position: fixed;
-      top: 6.4rem;
+      top: 4.4rem;
       right: -100%;
       width: 80%;
       height: calc(100vh - 4.5rem);
@@ -1566,6 +1566,7 @@ cta-banner::after{
 
   .nav-menu.active {
       right: 0;
+      overflow: scroll;
   }
 
   .nav-item {
@@ -1588,6 +1589,7 @@ cta-banner::after{
 
   .nav-item.active .dropdown {
       display: block;
+      visibility: visible;
   }
 
   .cta-button {
@@ -1689,27 +1691,72 @@ cta-banner::after{
   margin-top: 20px;
   border-radius: 5px;
 }
-#scroll-toggle {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 99;
-  font-size: 18px;
-  background-color: rgba(0, 0, 0, 0.4);
-    color: var(--primary);
-  border: none;
-  padding: 13px 15px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s;
-}
 
-/* Hover effect */
-#scroll-toggle:hover {
-/* Example with 50% opacity */
-background-color: rgba(31, 143, 176, 0.5); /* 0.5 is 50% opacity */
 
-  color: var(--dark);
-}
+
+  /* Scroll button styles */
+  #scroll-toggle {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+
+  #scroll-toggle:hover {
+    background-color:var(--primary-hover);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Arrow icon styles */
+  .arrow-icon {
+    width: 20px;
+    height: 20px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+  }
+
+  /* Rotate the arrow for "scroll to bottom" */
+  .down {
+    transform: rotate(225deg);
+    margin-bottom:-6px;
+  }
+
+  /* Add a smooth transition to fade in/out the button */
+  #scroll-toggle {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  #scroll-toggle.show {
+    opacity: 1;
+  }
+  @media (max-width: 480px) {
+    #scroll-toggle {
+      bottom: 10px;
+      right: 10px;
+      padding: 8px 12px;
+      font-size: 16px;  /* Even smaller font size for very small screens */
+    }
+    .cta-btn-menu{
+      margin-bottom: 30px;
+    }
+
+    .arrow-icon {
+      width: 16px;  /* Further reduce icon size */
+      height: 16px;
+    }
+  }
+

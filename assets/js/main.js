@@ -6,29 +6,44 @@
 */
 (function() {
   "use strict";
- 
-  $(document).ready(function () {
-    // Show the button after scrolling down 100px
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-          $("#scroll-toggle").fadeIn();
-          $("#scroll-icon").text("▲"); // Set icon to 'Scroll to Top'
-        } else {
-          $("#scroll-icon").text("▼"); // Set icon to 'Scroll to Bottom'
-        }
-      });
-  
-      // Toggle scroll behavior
-      $("#scroll-toggle").click(function () {
-        if ($("#scroll-icon").text() === "▲") {
-          // Scroll to top
-          $("html, body").animate({ scrollTop: 0 }, 600);
-        } else {
-          // Scroll to bottom
-          $("html, body").animate({ scrollTop: $(document).height() }, 600);
-        }
-      });
 
+  if (document.getElementById("scroll-toggle")) {
+
+  $("#scroll-toggle").hide();
+
+  $("#scroll-toggle").hide();
+
+    // Show the button when user scrolls more than 100px down
+    $(window).scroll(function () {
+      // Check if the user has scrolled more than 100px from the top
+      if ($(this).scrollTop() > 100) {
+        $("#scroll-toggle").fadeIn().addClass('show');
+
+        // Check if the user has scrolled to the bottom of the page
+        if ($(this).scrollTop() + $(window).height() >= $(document).height()-1) {
+          $("#scroll-icon").addClass('down');  // Switch to down arrow (scroll to top)
+        } else {
+          $("#scroll-icon").removeClass('down');  // Switch to up arrow (scroll to bottom)
+        }
+      } else {
+        $("#scroll-toggle").fadeOut().removeClass('show');
+      }
+    });
+
+    // Toggle scroll behavior on button click
+    $("#scroll-toggle").click(function () {
+      if ($("#scroll-icon").hasClass('down')) {
+        // Scroll to top
+        $("html, body").animate({ scrollTop: 0 }, 600);
+      } else {
+        // Scroll to bottom
+        $("html, body").animate({ scrollTop: $(document).height() }, 600);
+      }
+    });
+    // Initially hide the button
+    
+}
+if (document.getElementById("modernContactForm")) {
     $("#modernContactForm").submit(function (event) {
         event.preventDefault(); // Prevent the form from reloading the page
     
@@ -63,8 +78,8 @@
           },
         });
       });
-  });
-
+  
+    }
   const mobileMenuBtn = document.querySelector('.menu-toggle');
             const navMenu = document.querySelector('.nav-menu');
             const navItems = document.querySelectorAll('.nav-item');
@@ -77,6 +92,7 @@
 
             // Handle dropdowns on mobile
             navItems.forEach(item => {
+                console.log(item)
                 if (item.querySelector('.dropdown')) {
                     const link = item.querySelector('.nav-link');
                     link.addEventListener('click', (e) => {
@@ -113,10 +129,16 @@
                     document.querySelector(this.getAttribute('href')).scrollIntoView({
                         behavior: 'smooth'
                     });
+
+                    if ($(".nav-menu").hasClass("active")) {
+                        $(".nav-menu.active").removeClass("active");
+
+                    }
                 });
             });
 
 
+            
             if (typeof Lenis !== 'undefined') {
 
             const lenis = new Lenis({
