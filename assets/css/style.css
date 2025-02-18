@@ -1544,6 +1544,7 @@ cta-banner::after{
 
   .nav-container {
       padding: 0rem 1rem 0rem 1rem;
+      justify-content: space-around;
   }
 
   .mobile-menu-btn {
