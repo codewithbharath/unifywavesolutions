@@ -239,10 +239,9 @@
     width: auto !important;
 }
 .logo-img{
-    width: 50px; /* Increased size for larger logo */
-  height: auto;
+    height: 70px;
   /* margin-right: 10px; */
-  margin-right: -8px;
+  /* margin-right: -8px; */
 }
 /* Who We Are Section */
 .who-we-are-content {
@@ -349,9 +348,10 @@
     }
 
     @media (max-width: 768px) {
-        .logo-right{
-            display: none;
+        .logo-img{
+height: 60px;
         }
+        
         #who-we-are{
         scroll-margin-top: 70px; 
     }
@@ -395,8 +395,7 @@
 <body>
     <!-- Compact Header -->
     <header class="compact-header">
-        <div class="header-left"> <img src="assets/img/logo.png" alt="Unifywave Logo Left" class="logo-img">
-            <img src="assets/img/unifywave.png" alt="Unifywave Logo Right" class="logo-right"></div>
+        <div class="header-left"> <img src="assets/img/logo_1.png" alt="Unifywave Logo Left" class="logo-img">
             <div class="header-right">
                 <button class="header-button" onclick="togglePlay()">
                     <i id="videoPlayPassIcon" class="fas fa-pause"></i>
