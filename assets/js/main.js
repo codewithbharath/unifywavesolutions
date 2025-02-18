@@ -20,7 +20,7 @@
         $("#scroll-toggle").fadeIn().addClass('show');
 
         // Check if the user has scrolled to the bottom of the page
-        if ($(this).scrollTop() + $(window).height() >= $(document).height()-1) {
+        if ($(this).scrollTop() + $(window).height() >= $(document).height()-10) {
           $("#scroll-icon").addClass('down');  // Switch to down arrow (scroll to top)
         } else {
           $("#scroll-icon").removeClass('down');  // Switch to up arrow (scroll to bottom)
