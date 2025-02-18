@@ -77,7 +77,7 @@ if (document.getElementById("modernContactForm")) {
             .addClass("error")
             .text("An error occurred. Please try again.")
             .fadeIn();
-            $("#response-message").delay(1000).fadeOut();
+                        $("#response-message").delay(1000).fadeOut();
 
           },
         });
