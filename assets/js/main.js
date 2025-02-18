@@ -7,40 +7,64 @@
 (function() {
   "use strict";
  
-  $("#modernContactForm").submit(function (event) {
-    event.preventDefault(); // Prevent the form from reloading the page
+  $(document).ready(function () {
+    // Show the button after scrolling down 100px
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $("#scroll-toggle").fadeIn();
+          $("#scroll-icon").text("▲"); // Set icon to 'Scroll to Top'
+        } else {
+          $("#scroll-icon").text("▼"); // Set icon to 'Scroll to Bottom'
+        }
+      });
+  
+      // Toggle scroll behavior
+      $("#scroll-toggle").click(function () {
+        if ($("#scroll-icon").text() === "▲") {
+          // Scroll to top
+          $("html, body").animate({ scrollTop: 0 }, 600);
+        } else {
+          // Scroll to bottom
+          $("html, body").animate({ scrollTop: $(document).height() }, 600);
+        }
+      });
 
-    // Collect form data
-    const formData = {
-      name: $("#name").val(),
-      name: $("#phoneNumber").val(),
-      email: $("#email").val(),
-      message: $("#message").val(),
-    };
-
-    // Send the form data to send-email.php using AJAX
-    $.ajax({
-      type: "POST",
-      url: "send-email.php",
-      data: formData,
-      success: function (response) {
-        $("#response-message")
-        .removeClass("error")
-        .addClass("success")
-        .text(response)
-        .fadeIn();
-        $("#contact-form")[0].reset(); // Optionally reset the form
-      },
-      error: function (err) {
-        console.log(err)
-        $("#response-message")
-        .removeClass("success")
-        .addClass("error")
-        .text("An error occurred. Please try again.")
-        .fadeIn();
-      },
-    });
+    $("#modernContactForm").submit(function (event) {
+        event.preventDefault(); // Prevent the form from reloading the page
+    
+        // Collect form data
+        const formData = {
+          name: $("#name").val(),
+          name: $("#phoneNumber").val(),
+          email: $("#email").val(),
+          message: $("#message").val(),
+        };
+    
+        // Send the form data to send-email.php using AJAX
+        $.ajax({
+          type: "POST",
+          url: "send-email.php",
+          data: formData,
+          success: function (response) {
+            $("#response-message")
+            .removeClass("error")
+            .addClass("success")
+            .text(response)
+            .fadeIn();
+            $("#contact-form")[0].reset(); // Optionally reset the form
+          },
+          error: function (err) {
+            console.log(err)
+            $("#response-message")
+            .removeClass("success")
+            .addClass("error")
+            .text("An error occurred. Please try again.")
+            .fadeIn();
+          },
+        });
+      });
   });
+
   const mobileMenuBtn = document.querySelector('.menu-toggle');
             const navMenu = document.querySelector('.nav-menu');
             const navItems = document.querySelectorAll('.nav-item');
@@ -85,7 +109,6 @@
             // Add smooth scroll
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
-                    debugger
                     e.preventDefault();
                     document.querySelector(this.getAttribute('href')).scrollIntoView({
                         behavior: 'smooth'
