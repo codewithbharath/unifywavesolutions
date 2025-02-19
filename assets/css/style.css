@@ -221,7 +221,7 @@ h4:hover {
   position: absolute;
   top: 100%;
   left: 0;
-  background: var(--glass-bg);
+  background: var(--blue-glass-bg);
   backdrop-filter: var(--blur-intensity);
   -webkit-backdrop-filter: var(--blur-intensity);
   border-radius: 0.5rem;
