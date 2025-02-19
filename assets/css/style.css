@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: url('../img/wave3.png');
-  background-color: #0f0f0f;
+  background-color: rgba(15, 23, 42, 0.9);
 
   /* Your wave image */
   background-repeat: repeat-y;
@@ -28,12 +28,13 @@ body {
   --glass-bg:rgba(18, 18, 18, 0.9); /* More transparency */
   --text-color:#FFFFFF;  /* Darker text */
   --blue-bg:linear-gradient(180deg, transparent 0%, rgba(15, 23, 42, 0.9) 100%);
-
+  --blue-bg-code:#0F172A;
   /* Derived Colors */
   --primary-hover: #E5671F;  /* 10% darker orange */
   --secondary-hover: #1F8FB0; /* 15% darker cyan */
   --overlay-dark: rgba(10,10,10,0.95);
   --overlay-light: rgba(255,255,255,0.1);
+  --blue-glass-bg:rgba(15, 23, 42, 0.9);
 }
 * {
   margin: 0;
@@ -167,7 +168,7 @@ h4:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--blue-bg);
+  background: var(--blue-glass-bg);
 }
 
 .logo {
@@ -337,7 +338,7 @@ h4:hover {
   height: 100vh;
   position: relative;
   object-fit: cover;
-  filter: brightness(0.5);
+  filter: brightness(0.9);
 }
 
 .banner-overlay {
@@ -801,6 +802,7 @@ cta-banner::after{
 }
 .cta-btn-menu{
   margin-top: 0px;
+  background-color: var(--primary-hover);
 }
 
 .why-choose-section {
@@ -1486,6 +1488,10 @@ cta-banner::after{
 .contact-details-modern h3{
   font-size:20px;
 }
+.contact-details-modern h2{
+  font-size: 20px;
+}
+
 .contact-icon-modern{
   font-size: 1rem;
   color: var(--text-color);
@@ -1578,11 +1584,11 @@ cta-banner::after{
 
   .nav-menu {
       position: fixed;
-      top: 4.4rem;
+      top: 4rem;
       right: -100%;
       width: 80%;
       height: calc(100vh - 4.5rem);
-      background: var(--glass-bg);
+      background: var(--blue-glass-bg);
       backdrop-filter: var(--blur-intensity);
       flex-direction: column;
       padding: 1.5rem;
