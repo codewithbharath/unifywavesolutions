@@ -1169,7 +1169,7 @@ cta-banner::after{
   gap: 15px;
   padding: 20px;
   margin-bottom: 25px;
-  background: rgba(255, 130, 44, 0.05);
+  background: rgb(13, 28, 51);
   border-radius: 12px;
   transition: all 0.3s ease;
   cursor: pointer;
