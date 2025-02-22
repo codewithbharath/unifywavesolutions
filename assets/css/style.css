@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   background-image: url('../img/wave3.png');
-  background-color: rgba(15, 23, 42, 0.9);
+  background-color: rgb(13, 28, 51);
 
   /* Your wave image */
   background-repeat: repeat-y;
@@ -27,14 +27,16 @@ body {
   --light: #FFFFFF;         /* Pure white */
   --glass-bg:rgba(18, 18, 18, 0.9); /* More transparency */
   --text-color:#FFFFFF;  /* Darker text */
-  --blue-bg:linear-gradient(180deg, transparent 0%, rgba(15, 23, 42, 0.9) 100%);
+  --blue-bg:linear-gradient(90deg, #032A48 0%,rgb(13, 28, 51,0.1) 100%);
+  --blue-menu:linear-gradient(90deg, #032A48 0%, #132C43 100%);
   --blue-bg-code:#0F172A;
+  
   /* Derived Colors */
   --primary-hover: #E5671F;  /* 10% darker orange */
   --secondary-hover: #1F8FB0; /* 15% darker cyan */
   --overlay-dark: rgba(10,10,10,0.95);
   --overlay-light: rgba(255,255,255,0.1);
-  --blue-glass-bg:rgba(15, 23, 42, 0.9);
+  --blue-glass-bg:linear-gradient(90deg, #032A48 0%, rgb(4, 31, 52,0.1) 100%);
 }
 * {
   margin: 0;
@@ -168,7 +170,7 @@ h4:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--blue-glass-bg);
+  background: var(--blue-bg);
 }
 
 .logo {
@@ -221,7 +223,7 @@ h4:hover {
   position: absolute;
   top: 100%;
   left: 0;
-  background: var(--blue-glass-bg);
+  background:linear-gradient(90deg, #032A48 0%, #132C43 100%);
   backdrop-filter: var(--blur-intensity);
   -webkit-backdrop-filter: var(--blur-intensity);
   border-radius: 0.5rem;
@@ -338,7 +340,7 @@ h4:hover {
   height: 100vh;
   position: relative;
   object-fit: cover;
-  filter: brightness(0.9);
+  /* filter: brightness(0.9); */
 }
 
 .banner-overlay {
@@ -464,7 +466,7 @@ h4:hover {
   max-width: 1280px;
   margin: 0 auto;
   padding: 4rem 2rem;
-  /* background: rgba(18, 18, 18, 0.95); */
+  background: var(--blue-bg);
   border-radius: 12px;
   border: 1px solid rgba(50, 185, 232, 0.1);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
@@ -1516,7 +1518,7 @@ cta-banner::after{
 .phone-icon {
   width: 40px;
   height: 40px;
-  background: rgba(255, 130, 44, 0.1);
+  background: #0D1C33;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1588,7 +1590,7 @@ cta-banner::after{
       right: -100%;
       width: 80%;
       height: calc(100vh - 4.5rem);
-      background: var(--blue-glass-bg);
+      background: linear-gradient(90deg, #032A48 0%, #132C43 100%);
       backdrop-filter: var(--blur-intensity);
       flex-direction: column;
       padding: 1.5rem;
